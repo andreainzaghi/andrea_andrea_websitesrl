@@ -1,0 +1,921 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet"  href="./css/combined.css" > -->
+    <title>Document</title>
+</head>
+<style type="text/css">
+    img.wp-smiley,
+    img.emoji {
+        display: inline !important;
+        border: none !important;
+        box-shadow: none !important;
+        height: 1em !important;
+        width: 1em !important;
+        margin: 0 0.07em !important;
+        vertical-align: -0.1em !important;
+        background: none !important;
+        padding: 0 !important;
+    }
+    </style>
+<link rel="stylesheet" id="formidable-css" href="https://www.uebb.it/wp-content/plugins/formidable/css/formidableforms.css?ver=418617" type="text/css" media="all">
+    <link rel="stylesheet" id="themo-icons-css" href="https://www.uebb.it/wp-content/plugins/th-widget-pack/assets/icons/icons.css?ver=2.2.5" type="text/css" media="all">
+    <link rel="stylesheet" id="thmv-global-css" href="https://www.uebb.it/wp-content/plugins/th-widget-pack/css/global.css?ver=1680535226" type="text/css" media="all">
+    <link rel="stylesheet" id="wp-block-library-css" href="https://c0.wp.com/c/6.2/wp-includes/css/dist/block-library/style.min.css" type="text/css" media="all">
+    <style id="wp-block-library-inline-css" type="text/css">
+    .has-text-align-justify{text-align:justify;}
+    </style>
+    <link rel="stylesheet" id="mediaelement-css" href="https://c0.wp.com/c/6.2/wp-includes/js/mediaelement/mediaelementplayer-legacy.min.css" type="text/css" media="all">
+    <link rel="stylesheet" id="wp-mediaelement-css" href="https://c0.wp.com/c/6.2/wp-includes/js/mediaelement/wp-mediaelement.min.css" type="text/css" media="all">
+    <link rel="stylesheet" id="classic-theme-styles-css" href="https://c0.wp.com/c/6.2/wp-includes/css/classic-themes.min.css" type="text/css" media="all"> 
+    <style id="global-styles-inline-css" type="text/css"> 
+    body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+    .wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+    :where(.wp-block-columns.is-layout-flex){gap: 2em;}
+    .wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+    </style>
+     <link rel="stylesheet" id="different-menus-in-different-pages-css" href="https://www.uebb.it/wp-content/plugins/different-menus-in-different-pages/public/css/different-menus-for-different-page-public.css?ver=2.2.2" type="text/css" media="all">
+    <link rel="stylesheet" id="thhf-style-css" href="https://www.uebb.it/wp-content/plugins/th-widget-pack/header-footer/assets/css/header-footer-elementor.css?ver=2.2.5" type="text/css" media="all">
+    <link rel="stylesheet" id="elementor-icons-css" href="https://www.uebb.it/wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css?ver=5.16.0" type="text/css" media="all">
+    <link rel="stylesheet" id="elementor-frontend-legacy-css" href="https://www.uebb.it/wp-content/plugins/elementor/assets/css/frontend-legacy.min.css?ver=3.8.1" type="text/css" media="all">
+    <link rel="stylesheet" id="elementor-frontend-css" href="https://www.uebb.it/wp-content/plugins/elementor/assets/css/frontend.min.css?ver=3.8.1" type="text/css" media="all">
+    <link rel="stylesheet" id="elementor-post-5-css" href="https://www.uebb.it/wp-content/uploads/elementor/css/post-5.css?ver=1669299763" type="text/css" media="all">
+    <link rel="stylesheet" id="font-awesome-5-all-css" href="https://www.uebb.it/wp-content/plugins/elementor/assets/lib/font-awesome/css/all.min.css?ver=3.8.1" type="text/css" media="all">
+    <link rel="stylesheet" id="font-awesome-4-shim-css" href="https://www.uebb.it/wp-content/plugins/elementor/assets/lib/font-awesome/css/v4-shims.min.css?ver=3.8.1" type="text/css" media="all">
+    <link rel="stylesheet" id="elementor-post-163-css" href="https://www.uebb.it/wp-content/uploads/elementor/css/post-163.css?ver=1680535858" type="text/css" media="all">
+    <link rel="stylesheet" id="thhf-widgets-style-css" href="https://www.uebb.it/wp-content/plugins/th-widget-pack/header-footer/inc/widgets-css/frontend.css?ver=2.2.5" type="text/css" media="all">
+    <link rel="stylesheet" id="font-awesome-css" href="https://www.uebb.it/wp-content/plugins/elementor/assets/lib/font-awesome/css/font-awesome.min.css?ver=4.7.0" type="text/css" media="all">
+    <link rel="stylesheet" id="roots_app-css" href="https://www.uebb.it/wp-content/themes/stratusx/assets/css/app.css?ver=1" type="text/css" media="all">
+    <link rel="stylesheet" id="roots_child-css" href="https://www.uebb.it/wp-content/themes/stratusx-child/style.css?ver=6.2" type="text/css" media="all">
+    <link rel="stylesheet" id="google-fonts-1-css" href="https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&amp;display=auto&amp;ver=6.2" type="text/css" media="all">
+    <link rel="stylesheet" id="elementor-icons-shared-0-css" href="https://www.uebb.it/wp-content/plugins/elementor/assets/lib/font-awesome/css/fontawesome.min.css?ver=5.15.3" type="text/css" media="all">
+    <link rel="stylesheet" id="elementor-icons-fa-solid-css" href="https://www.uebb.it/wp-content/plugins/elementor/assets/lib/font-awesome/css/solid.min.css?ver=5.15.3" type="text/css" media="all">
+    <link rel="stylesheet" id="elementor-icons-th-linea-css" href="https://www.uebb.it/wp-content/plugins/th-widget-pack/assets/icons/icons.css?ver=2.2.5" type="text/css" media="all">
+    <link rel="stylesheet" id="elementor-icons-fa-regular-css" href="https://www.uebb.it/wp-content/plugins/elementor/assets/lib/font-awesome/css/regular.min.css?ver=5.15.3" type="text/css" media="all">
+    <link rel="stylesheet" id="jetpack_css-css" href="https://c0.wp.com/p/jetpack/12.0/css/jetpack.css" type="text/css" media="all"></style> 
+   </style> 
+<body class="home page-template-default page page-id-163 ehf-template-stratusx ehf-stylesheet-stratusx-child elementor-default elementor-kit-5 elementor-page elementor-page-163 th-sticky-header loaded headhesive e--ua-blink e--ua-chrome e--ua-webkit" data-elementor-device-mode="mobile" cz-shortcut-listen="true"><header class="banner navbar navbar-default navbar-static-top dark-header headhesive--clone headhesive--unstick" role="banner" data-transparent-header="false"><div class="container">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <div id="logo">
+            <a href="">
+                                           <img data-rjs="2" class="logo-trans logo-reg" src="https://i0.wp.com/www.uebb.it/wp-content/uploads/2022/11/Tavola-disegno-2-copia@4x-8-1.png?fit=117%2C30&amp;ssl=1" height="30" width="117" alt="UEBB Artificial Intelligence"><img data-rjs="2" class="logo-main logo-reg" src="https://i0.wp.com/www.uebb.it/wp-content/uploads/2022/11/Tavola-disegno-2-copia@4x-8-1.png?fit=117%2C30&amp;ssl=1" height="30" width="117" alt="UEBB Artificial Intelligence"></a>
+        </div>
+    </div>
+
+    
+    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation" style="height: 0px;"><ul id="menu-main-menu" class="nav navbar-nav">
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-721"><a href="#intestazione">Home</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-725"><a href="#chisiamo">Chi Siamo</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-726"><a href="#innovazionedigitale">Innovazione</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-720"><a href="#results">Prodotti e Servizi</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-747"><a href="">Contatti</a></li>
+</ul></nav>
+</div>
+</header>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-dark-grayscale"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></feColorMatrix><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0 0.49803921568627"></feFuncR><feFuncG type="table" tableValues="0 0.49803921568627"></feFuncG><feFuncB type="table" tableValues="0 0.49803921568627"></feFuncB><feFuncA type="table" tableValues="1 1"></feFuncA></feComponentTransfer><feComposite in2="SourceGraphic" operator="in"></feComposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-grayscale"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></feColorMatrix><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0 1"></feFuncR><feFuncG type="table" tableValues="0 1"></feFuncG><feFuncB type="table" tableValues="0 1"></feFuncB><feFuncA type="table" tableValues="1 1"></feFuncA></feComponentTransfer><feComposite in2="SourceGraphic" operator="in"></feComposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-purple-yellow"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></feColorMatrix><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0.54901960784314 0.98823529411765"></feFuncR><feFuncG type="table" tableValues="0 1"></feFuncG><feFuncB type="table" tableValues="0.71764705882353 0.25490196078431"></feFuncB><feFuncA type="table" tableValues="1 1"></feFuncA></feComponentTransfer><feComposite in2="SourceGraphic" operator="in"></feComposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-blue-red"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></feColorMatrix><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0 1"></feFuncR><feFuncG type="table" tableValues="0 0.27843137254902"></feFuncG><feFuncB type="table" tableValues="0.5921568627451 0.27843137254902"></feFuncB><feFuncA type="table" tableValues="1 1"></feFuncA></feComponentTransfer><feComposite in2="SourceGraphic" operator="in"></feComposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-midnight"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></feColorMatrix><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0 0"></feFuncR><feFuncG type="table" tableValues="0 0.64705882352941"></feFuncG><feFuncB type="table" tableValues="0 1"></feFuncB><feFuncA type="table" tableValues="1 1"></feFuncA></feComponentTransfer><feComposite in2="SourceGraphic" operator="in"></feComposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-magenta-yellow"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></feColorMatrix><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0.78039215686275 1"></feFuncR><feFuncG type="table" tableValues="0 0.94901960784314"></feFuncG><feFuncB type="table" tableValues="0.35294117647059 0.47058823529412"></feFuncB><feFuncA type="table" tableValues="1 1"></feFuncA></feComponentTransfer><feComposite in2="SourceGraphic" operator="in"></feComposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-purple-green"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></feColorMatrix><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0.65098039215686 0.40392156862745"></feFuncR><feFuncG type="table" tableValues="0 1"></feFuncG><feFuncB type="table" tableValues="0.44705882352941 0.4"></feFuncB><feFuncA type="table" tableValues="1 1"></feFuncA></feComponentTransfer><feComposite in2="SourceGraphic" operator="in"></feComposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-blue-orange"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></feColorMatrix><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0.098039215686275 1"></feFuncR><feFuncG type="table" tableValues="0 0.66274509803922"></feFuncG><feFuncB type="table" tableValues="0.84705882352941 0.41960784313725"></feFuncB><feFuncA type="table" tableValues="1 1"></feFuncA></feComponentTransfer><feComposite in2="SourceGraphic" operator="in"></feComposite></filter></defs></svg><!-- Preloader Start --><div id="loader-wrapper">
+        <div id="loader"></div>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+    </div>
+    <!-- Preloader End -->
+
+
+
+
+
+<header class="banner navbar navbar-default navbar-static-top dark-header" role="banner" data-transparent-header="false"><div class="container">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <div id="logo">
+            <a href="">
+                                           <img data-rjs="2" class="logo-trans logo-reg" src="https://i0.wp.com/www.uebb.it/wp-content/uploads/2022/11/Tavola-disegno-2-copia@4x-8-1.png?fit=117%2C30&amp;ssl=1" height="30" width="117" alt="UEBB Artificial Intelligence"><img data-rjs="2" class="logo-main logo-reg" src="https://i0.wp.com/www.uebb.it/wp-content/uploads/2022/11/Tavola-disegno-2-copia@4x-8-1.png?fit=117%2C30&amp;ssl=1" height="30" width="117" alt="UEBB Artificial Intelligence"></a>
+        </div>
+    </div>
+
+    
+    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation" style="height: 0px;"><ul id="menu-main-menu" class="nav navbar-nav">
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-721"><a href="#intestazione">Home</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-725"><a href="#chisiamo">Chi Siamo</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-726"><a href="#innovazionedigitale">Innovazione</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-720"><a href="#results">Prodotti e Servizi</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-747"><a href="">Contatti</a></li>
+</ul></nav>
+</div>
+</header><div class="wrap" role="document">
+
+<div class="content">
+
+    
+<div class="inner-container">
+        <h1 class="entry-title">Home</h1>
+
+
+    <section class="content-editor"><div data-elementor-type="wp-page" data-elementor-id="163" class="elementor elementor-163">
+                    <div class="elementor-inner">
+            <div class="elementor-section-wrap">
+                                <section class="elementor-section elementor-top-section elementor-element elementor-element-40579827 elementor-section-height-min-height elementor-section-boxed elementor-section-height-default elementor-section-items-middle" data-id="40579827" data-element_type="section" id="intestazione" data-settings="{&quot;background_background&quot;:&quot;gradient&quot;,&quot;shape_divider_bottom&quot;:&quot;waves&quot;,&quot;shape_divider_bottom_negative&quot;:&quot;yes&quot;}"><div class="elementor-background-overlay"></div>
+                    <div class="elementor-shape elementor-shape-bottom" data-negative="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none"><path class="elementor-shape-fill" d="M790.5,93.1c-59.3-5.3-116.8-18-192.6-50c-29.6-12.7-76.9-31-100.5-35.9c-23.6-4.9-52.6-7.8-75.5-5.3
+c-10.2,1.1-22.6,1.4-50.1,7.4c-27.2,6.3-58.2,16.6-79.4,24.7c-41.3,15.9-94.9,21.9-134,22.6C72,58.2,0,25.8,0,25.8V100h1000V65.3
+c0,0-51.5,19.4-106.2,25.7C839.5,97,814.1,95.2,790.5,93.1z"></path></svg>
+</div>
+                <div class="elementor-container elementor-column-gap-default">
+                        <div class="elementor-row">
+                <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-2fc98bbf" data-id="2fc98bbf" data-element_type="column">
+        <div class="elementor-column-wrap elementor-element-populated">
+                        <div class="elementor-widget-wrap">
+                    <div class="elementor-element elementor-element-58a982f4 elementor-widget elementor-widget-heading animated fadeInDown" data-id="58a982f4" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInDown&quot;,&quot;_animation_delay&quot;:150}" data-widget_type="heading.default">
+            <div class="elementor-widget-container">
+        <h6 class="elementor-heading-title elementor-size-default">AI, BI &amp; CLOUD FOR YOUR BUSINESS</h6>		</div>
+            </div>
+            <div class="elementor-element elementor-element-44d1a7b elementor-widget elementor-widget-image" data-id="44d1a7b" data-element_type="widget" data-widget_type="image.default">
+            <div class="elementor-widget-container">
+                            <div class="elementor-image">
+                                            <img data-rjs="2" decoding="async" width="1024" height="263" src="https://i0.wp.com/www.uebb.it/wp-content/uploads/2022/11/Tavola-disegno-2-copia@4x-8-1.png?fit=1024%2C263&amp;ssl=1" class="attachment-large size-large" alt="" loading="lazy" srcset="https://i0.wp.com/www.uebb.it/wp-content/uploads/2022/11/Tavola-disegno-2-copia@4x-8-1.png?w=2051&amp;ssl=1 2051w, https://i0.wp.com/www.uebb.it/wp-content/uploads/2022/11/Tavola-disegno-2-copia@4x-8-1.png?resize=300%2C77&amp;ssl=1 300w, https://i0.wp.com/www.uebb.it/wp-content/uploads/2022/11/Tavola-disegno-2-copia@4x-8-1.png?resize=1024%2C263&amp;ssl=1 1024w, https://i0.wp.com/www.uebb.it/wp-content/uploads/2022/11/Tavola-disegno-2-copia@4x-8-1.png?resize=768%2C197&amp;ssl=1 768w, https://i0.wp.com/www.uebb.it/wp-content/uploads/2022/11/Tavola-disegno-2-copia@4x-8-1.png?resize=1536%2C395&amp;ssl=1 1536w, https://i0.wp.com/www.uebb.it/wp-content/uploads/2022/11/Tavola-disegno-2-copia@4x-8-1.png?resize=2048%2C526&amp;ssl=1 2048w, https://i0.wp.com/www.uebb.it/wp-content/uploads/2022/11/Tavola-disegno-2-copia@4x-8-1.png?resize=117%2C30&amp;ssl=1 117w, https://i0.wp.com/www.uebb.it/wp-content/uploads/2022/11/Tavola-disegno-2-copia@4x-8-1.png?resize=311%2C80&amp;ssl=1 311w, https://i0.wp.com/www.uebb.it/wp-content/uploads/2022/11/Tavola-disegno-2-copia@4x-8-1.png?resize=394%2C101&amp;ssl=1 394w, https://i0.wp.com/www.uebb.it/wp-content/uploads/2022/11/Tavola-disegno-2-copia@4x-8-1.png?resize=915%2C235&amp;ssl=1 915w, https://i0.wp.com/www.uebb.it/wp-content/uploads/2022/11/Tavola-disegno-2-copia@4x-8-1.png?resize=1240%2C319&amp;ssl=1 1240w, https://i0.wp.com/www.uebb.it/wp-content/uploads/2022/11/Tavola-disegno-2-copia@4x-8-1.png?resize=1920%2C493&amp;ssl=1 1920w" sizes="(max-width: 1024px) 100vw, 1024px">
+</div>
+                    </div>
+            </div>
+            <div class="elementor-element elementor-element-30800c87 elementor-align-center elementor-mobile-align-left elementor-widget elementor-widget-button animated fadeInUp" data-id="30800c87" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="button.default">
+            <div class="elementor-widget-container">
+                <div class="elementor-button-wrapper">
+        <a href="#results" class="elementor-button-link elementor-button elementor-size-lg" role="button">
+                    <span class="elementor-button-content-wrapper">
+                    <span class="elementor-button-text">SCOPRI DI PIÙ</span>
+    </span>
+                </a>
+    </div>
+            </div>
+            </div>
+            <div class="elementor-element elementor-element-3f18d9ce elementor-widget elementor-widget-spacer" data-id="3f18d9ce" data-element_type="widget" data-widget_type="spacer.default">
+            <div class="elementor-widget-container">
+                <div class="elementor-spacer">
+        <div class="elementor-spacer-inner"></div>
+    </div>
+            </div>
+            </div>
+                    </div>
+                </div>
+    </div>
+            <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-735aa5a7" data-id="735aa5a7" data-element_type="column">
+        <div class="elementor-column-wrap elementor-element-populated">
+                        <div class="elementor-widget-wrap">
+                    <div class="elementor-element elementor-element-4e818dcc elementor-widget elementor-widget-image animated fadeIn" data-id="4e818dcc" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:150}" data-widget_type="image.default">
+            <div class="elementor-widget-container">
+                            <div class="elementor-image">
+                                            <img data-rjs="2" decoding="async" width="640" height="560" src="https://www.uebb.it/wp-content/uploads/2020/05/SEO-1.svg" class="attachment-full size-full" alt="" loading="lazy">
+</div>
+                    </div>
+            </div>
+                    </div>
+                </div>
+    </div>
+                            </div>
+                </div>
+    </section><section class="elementor-section elementor-top-section elementor-element elementor-element-2a1061b0 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="2a1061b0" data-element_type="section" id="chisiamo" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;shape_divider_top&quot;:&quot;curve&quot;,&quot;shape_divider_top_negative&quot;:&quot;yes&quot;}"><div class="elementor-shape elementor-shape-top" data-negative="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none"><path class="elementor-shape-fill" d="M500,97C126.7,96.3,0.8,19.8,0,0v100l1000,0V1C1000,19.4,873.3,97.8,500,97z"></path></svg>
+</div>
+                <div class="elementor-container elementor-column-gap-default">
+                        <div class="elementor-row">
+                <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-51872d9f" data-id="51872d9f" data-element_type="column">
+        <div class="elementor-column-wrap elementor-element-populated">
+                        <div class="elementor-widget-wrap">
+                    <div class="elementor-element elementor-element-4077fef2 elementor-widget elementor-widget-heading animated fadeInDown" data-id="4077fef2" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInDown&quot;}" data-widget_type="heading.default">
+            <div class="elementor-widget-container">
+        <h6 class="elementor-heading-title elementor-size-default">CHI SIAMO</h6>		</div>
+            </div>
+            <div class="elementor-element elementor-element-1f79e49c elementor-widget elementor-widget-heading animated fadeInDown" data-id="1f79e49c" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInDown&quot;}" data-widget_type="heading.default">
+            <div class="elementor-widget-container">
+        <h2 class="elementor-heading-title elementor-size-default">Il tuo partner nella Digital Era.</h2>		</div>
+            </div>
+            <div class="elementor-element elementor-element-1b989838 elementor-widget elementor-widget-heading animated fadeInDown" data-id="1b989838" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInDown&quot;}" data-widget_type="heading.default">
+            <div class="elementor-widget-container">
+        <h5 class="elementor-heading-title elementor-size-default">Il nostro obiettivo è di portare la tua azienda al livello successivo, implementando tecnologie allo stato dell'arte.</h5>		</div>
+            </div>
+                    </div>
+                </div>
+    </div>
+                            </div>
+                </div>
+    </section><section class="elementor-section elementor-top-section elementor-element elementor-element-21d48a3 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="21d48a3" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;shape_divider_bottom&quot;:&quot;waves&quot;,&quot;shape_divider_bottom_negative&quot;:&quot;yes&quot;}"><div class="elementor-shape elementor-shape-bottom" data-negative="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none"><path class="elementor-shape-fill" d="M790.5,93.1c-59.3-5.3-116.8-18-192.6-50c-29.6-12.7-76.9-31-100.5-35.9c-23.6-4.9-52.6-7.8-75.5-5.3
+c-10.2,1.1-22.6,1.4-50.1,7.4c-27.2,6.3-58.2,16.6-79.4,24.7c-41.3,15.9-94.9,21.9-134,22.6C72,58.2,0,25.8,0,25.8V100h1000V65.3
+c0,0-51.5,19.4-106.2,25.7C839.5,97,814.1,95.2,790.5,93.1z"></path></svg>
+</div>
+                <div class="elementor-container elementor-column-gap-default">
+                        <div class="elementor-row">
+                <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-2fb6e173" data-id="2fb6e173" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+        <div class="elementor-column-wrap elementor-element-populated">
+                        <div class="elementor-widget-wrap">
+                    <div class="elementor-element elementor-element-5fe66c8e elementor-view-default elementor-mobile-position-top elementor-vertical-align-top elementor-widget elementor-widget-icon-box animated fadeIn" data-id="5fe66c8e" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;}" data-widget_type="icon-box.default">
+            <div class="elementor-widget-container">
+                <div class="elementor-icon-box-wrapper">
+                    <div class="elementor-icon-box-icon">
+            <span class="elementor-icon elementor-animation-">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid meet" viewBox="0 0 640 560" width="640" height="560"><defs><path d="M381.96 176.24C530.45 261.82 612.94 309.37 629.44 318.88C634.25 321.65 635.91 327.79 633.14 332.6C632.25 334.14 630.98 335.41 629.44 336.3C594.53 356.34 315.21 516.68 280.3 536.72C271.83 541.58 261.44 541.69 252.87 537.02C228.79 523.91 36.18 418.99 12.11 405.87C7.23 403.22 5.43 397.12 8.08 392.24C8.96 390.62 10.28 389.27 11.88 388.34C36.78 373.93 161.27 301.89 385.36 172.22" id="ao2fOKdZ"></path><path d="M494.95 348.61C446.67 365.85 419.85 375.43 414.49 377.35C414.49 377.35 407.37 390.86 447.83 414.9C452.13 410.94 473.59 391.15 512.24 355.51" id="aa8FUeeyp"></path><linearGradient id="gradientaaLvLStAR" gradientUnits="userSpaceOnUse" x1="455.18" y1="377.86" x2="487.68" y2="353.15"><stop style="stop-color: #acf4e6;stop-opacity: 1" offset="0%"></stop><stop style="stop-color: #8ecdc6;stop-opacity: 1" offset="100%"></stop></linearGradient><path d="M316.33 407.39L170.52 485.26L221.21 512.75L359.91 425.94" id="br8UzWX3a"></path><linearGradient id="gradientb1dTkA45x0" gradientUnits="userSpaceOnUse" x1="211.91" y1="489.6" x2="288.06" y2="445"><stop style="stop-color: #acf4e6;stop-opacity: 1" offset="0%"></stop><stop style="stop-color: #8ecdc6;stop-opacity: 1" offset="100%"></stop></linearGradient><path d="M235.77 363.78C145.72 409.53 95.69 434.94 85.69 440.02C85.69 440.02 111.75 442.61 151.67 464.65C160.86 459.8 206.83 435.54 289.56 391.87" id="aH3cSgh2q"></path><linearGradient id="gradienth3G5DHujEY" gradientUnits="userSpaceOnUse" x1="170.23" y1="428.14" x2="235.64" y2="381.84"><stop style="stop-color: #acf4e6;stop-opacity: 1" offset="0%"></stop><stop style="stop-color: #8ecdc6;stop-opacity: 1" offset="100%"></stop></linearGradient><path d="M292.9 331.63C326.74 344.32 345.53 351.38 349.29 352.79C349.29 352.79 351.65 354.32 350.14 357.98C349.27 360.08 344.61 363.1 344.61 363.1C339.74 365.94 300.79 388.61 295.92 391.44C293.26 392.63 290.43 393.39 287.53 393.71C283.64 393.93 277.13 390.78 277.13 390.78C274.1 389.03 258.99 380.28 231.78 364.52L292.9 331.63Z" id="jeRHaoR4a"></path><path d="M293.69 329C326.02 342.22 343.98 349.56 347.57 351.03C347.57 351.03 351.35 353.09 350.35 355.89C349.27 357.96 347.59 359.67 345.53 360.78C340.65 363.58 301.6 386.03 296.72 388.83C294.06 390.02 291.23 390.79 288.33 391.1C284.44 391.33 277.92 388.17 277.92 388.17C275.06 386.55 260.74 378.42 234.98 363.78L293.69 329Z" id="dzkkuzDI"></path><path d="M166.27 403.08C164.16 403.98 161.71 403.39 160.24 401.62C160.24 401.62 159.18 401.42 159.18 396.79C159.18 375.31 159.18 203.52 159.18 182.04C159.3 178.28 161.01 174.75 163.89 172.33C169.15 168.64 174.64 165.29 180.32 162.28C196.24 153.1 275.8 107.17 419.02 24.5C420.63 23.69 421.53 23.23 421.71 23.14C423.57 22.21 425.84 22.79 427.03 24.5C427.73 25.69 428.13 27.03 428.2 28.41C428.3 30.66 428.2 52.37 428.2 52.37C428.2 71.69 428.2 226.31 428.2 245.63C428.21 249.38 426.63 252.96 423.86 255.49C372.34 285.01 217.79 373.56 166.27 403.08Z" id="kmklQeauJ"></path><path d="M163.57 370.62C163.57 259.41 163.57 197.63 163.57 185.27C163.57 179.11 164.42 175.68 169.23 173.11C194.41 158.52 395.8 41.84 420.97 27.26C422.44 26.16 424.53 26.47 425.62 27.94C426.05 28.52 426.28 29.22 426.28 29.94C426.24 42.65 426.03 106.18 425.65 220.52L163.57 370.62Z" id="bNCq0Rk5G"></path><path d="M217.92 464.65C220.21 466.87 222.99 468.54 226.02 469.54C231.33 471.43 248.9 478.31 248.9 478.31C248.9 478.31 261.33 483.39 264.54 482.61C267.76 481.84 227.95 464.65 227.95 464.65C225.94 464.65 219.92 464.65 217.92 464.65Z" id="aOtVx6abz"></path><path d="M261.41 482.1C265.09 483.07 269.01 482.63 272.38 480.86C280.36 476.81 281.21 471.66 279.43 467.42C277.65 463.19 256.89 453.71 247.79 452.31C242.19 451.5 236.49 451.99 231.12 453.77C228.26 454.69 225.54 455.99 223.04 457.66C221.38 458.79 216.16 461.91 217.9 464.55C218.34 465.07 218.95 465.41 219.62 465.52C226.42 467.41 233.2 469.54 239.83 472.03C243.61 473.47 247.39 475.13 251.02 476.95C253.43 478.23 255.82 479.74 258.29 480.89C259.3 481.38 260.34 481.78 261.41 482.1Z" id="a3nibfwLuM"></path><path d="M259.8 440.24C259.8 442.65 259.8 443.99 259.8 444.26C259.8 444.26 259.8 444.89 261.33 445.6C261.33 445.6 299.12 460.72 299.12 460.72C300.09 461.19 301.22 461.19 302.2 460.72C303.73 459.91 447.66 376.72 447.66 376.72C447.66 376.72 448.36 376.29 447.83 374.53C447.68 374.47 446.93 374.18 445.59 373.64" id="a3z1TiT1n5"></path><path d="M259.99 440.62C259.99 440.62 273.82 447.49 273.82 447.49C276.32 448.63 296.31 457.7 298.81 458.83C299.71 459.41 300.83 459.54 301.84 459.19C303.46 458.56 447.3 375.61 447.3 375.61C447.59 375.32 447.72 374.91 447.63 374.51C447.63 374.51 447.63 374.17 446.91 373.85C446.91 373.85 409.27 355.75 409.27 355.75C408.46 355.37 407.53 355.32 406.69 355.62C405.63 356.19 260.82 439.2 260.82 439.2C260.66 439.48 259.4 439.88 259.99 440.62Z" id="b4RdRIpn"></path><path d="M82.69 241.8C82.68 246.28 86.32 249.93 90.8 249.93C92.17 249.93 93.51 249.59 94.7 248.94C102.47 244.7 164.62 210.84 172.39 206.6C175 205.18 176.62 202.44 176.62 199.46C176.62 193.43 176.62 145.22 176.62 139.19C176.63 134.71 172.99 131.07 168.51 131.06C167.08 131.06 165.67 131.43 164.43 132.15C156.67 136.64 94.52 172.53 86.75 177.02C84.24 178.47 82.69 181.14 82.69 184.04C82.69 195.6 82.69 236.02 82.69 241.8Z" id="e1dIhvjFv1"></path><path d="M176.62 184.61L176.62 223.6L160.03 208.68" id="aXH7GYm1A"></path><path d="M405.11 61.76C409.96 63.87 411.94 70.07 409.53 75.61C407.12 81.15 401.24 83.93 396.39 81.82C391.53 79.71 389.56 73.51 391.97 67.97C394.38 62.43 400.26 59.65 405.11 61.76Z" id="babGnKggV"></path><path d="M209.83 309.96L224.25 301.53L224.38 232.03L209.83 240.44L209.83 240.44L209.83 309.96Z" id="g31oBa3Vi"></path><path d="M233.79 296.47L248.9 287.7L248.9 206.37L234.05 214.76L234.05 214.76L233.79 296.47Z" id="c9oXJvy8R"></path><path d="M258.2 282.83L271.67 275.01L271.67 184.61L258.44 192.66L258.44 192.66L258.2 282.83Z" id="bqzHWLJ9n"></path><path d="M405.13 90.5C409.98 92.61 411.96 98.82 409.55 104.36C407.14 109.9 401.25 112.68 396.4 110.57C391.55 108.46 389.57 102.25 391.98 96.71C394.39 91.17 400.28 88.39 405.13 90.5Z" id="a4sCDqmpI8"></path><path d="M406.82 119.24C411.21 122.18 412.05 128.64 408.69 133.66C405.33 138.68 399.05 140.37 394.65 137.42C390.25 134.48 389.41 128.03 392.77 123.01C396.13 117.99 402.42 116.3 406.82 119.24Z" id="i2x92wBAMt"></path><path d="M316.7 224.79C305.24 221.15 296.62 211.57 292.43 198.01C288.61 184.36 288.98 169.88 293.49 156.44C303.37 125.33 329.02 106.64 351.92 113.92C374.82 121.19 385 151.15 375.04 182.27C375.04 182.27 375.04 182.27 375.04 182.27C370.97 195.87 362.9 207.94 351.88 216.9C344.78 222.74 335.93 226.06 326.74 226.34C323.33 226.35 319.95 225.82 316.7 224.79ZM309.22 161.34C305.71 171.6 305.36 182.68 308.22 193.15C310.77 201.44 315.55 207.09 321.71 209.04C327.87 210.98 334.93 209.13 341.89 203.82C350.25 196.92 356.35 187.67 359.4 177.26C366.24 155.73 360.51 133.81 346.93 129.56C345.32 129.05 343.64 128.8 341.94 128.8C329.36 128.8 315.25 142.37 309.22 161.34Z" id="a37ZjJzggA"></path><path d="M211.1 318.48C211.11 320.32 212.61 321.8 214.44 321.79C215.01 321.78 215.57 321.63 216.07 321.35C222.26 317.81 271.8 289.52 277.99 285.99C279.02 285.39 279.65 284.3 279.66 283.11C279.66 283.11 279.66 283.11 279.66 283.11C279.65 281.28 278.16 279.79 276.32 279.8C275.76 279.8 275.2 279.95 274.71 280.22C268.51 283.76 218.97 312.07 212.78 315.61C211.75 316.2 211.1 317.29 211.1 318.48C211.1 318.48 211.1 318.48 211.1 318.48Z" id="b46JI3n5ps"></path><path d="M197.61 207.85C197.61 209.79 199.18 211.36 201.12 211.36C201.74 211.36 202.35 211.2 202.88 210.89C209.7 206.95 264.23 175.46 271.04 171.52C272.13 170.89 272.8 169.73 272.8 168.48C272.8 165.97 272.8 145.93 272.8 143.43C272.8 141.49 271.22 139.91 269.28 139.91C268.67 139.91 268.06 140.08 267.53 140.39C260.71 144.32 206.17 175.78 199.35 179.72C198.26 180.35 197.6 181.52 197.61 182.78C197.61 187.79 197.61 205.34 197.61 207.85Z" id="d8ELul3CD"></path><path d="M216.23 178.51C220.9 179.99 223.19 185.93 221.33 191.78C219.47 197.63 214.18 201.17 209.51 199.68C204.83 198.2 202.55 192.26 204.4 186.41C206.26 180.56 211.55 177.02 216.23 178.51Z" id="a1kMPz6DPN"></path><path d="M264.94 153.7C265.62 153.31 265.85 152.44 265.45 151.76C265.05 151.08 264.18 150.85 263.5 151.25C259.52 153.49 227.65 171.4 223.66 173.64C222.98 174.03 222.75 174.9 223.15 175.58C223.55 176.26 224.42 176.49 225.1 176.09C225.1 176.09 260.96 155.94 264.94 153.7Z" id="c18LKdBm4L"></path><path d="M251.36 171.95C252.03 171.56 252.26 170.69 251.87 170.01C251.47 169.33 250.6 169.1 249.92 169.5C247.44 170.88 227.63 181.98 225.15 183.36C224.48 183.76 224.25 184.63 224.64 185.31C225.04 185.99 225.91 186.22 226.59 185.82C226.59 185.82 248.88 173.34 251.36 171.95Z" id="c2jEMMtm"></path><path d="M373.8 183.87L363.95 155.78L347.25 166.27L355.45 188.01L357.44 194.4L357.44 194.4L373.8 183.87Z" id="h1QFME0dkr"></path><path d="M359.06 192.24C360.29 189.1 359.45 185.53 356.96 183.25C357.67 181.27 358.08 179.19 358.19 177.09C358.22 176.79 358.09 176.5 357.85 176.32C357.55 175.82 356.9 175.65 356.4 175.96C356.2 176.07 356.05 176.25 355.96 176.47C355.49 177.94 355.09 179.43 354.71 180.95C354.32 182.06 354 183.19 353.75 184.35C353.51 183.36 353.24 182.46 352.96 181.42C352.96 181.42 352.96 181.42 352.96 181.42C352.94 181.29 352.89 181.17 352.83 181.06C352.8 180.98 352.6 180.35 352.58 180.27C352.14 178.47 351.62 176.69 351.01 174.94C351.01 174.87 351.01 174.83 351.01 174.83C350.95 174.66 350.83 174.52 350.67 174.43C350.71 179.74 351.23 185.04 352.22 190.26C352.93 192.4 353.78 194.49 354.77 196.51C354.85 196.65 354.96 196.77 355.09 196.85C355.28 197.44 355.47 198.01 355.72 198.57C355.72 198.58 355.72 198.62 355.72 198.69C355.81 199 355.86 199.18 355.87 199.21C356.11 199.74 356.72 199.97 357.24 199.73C357.47 199.62 357.65 199.44 357.76 199.21C358.46 199.67 359.65 199.21 359.34 198.31C359.9 198.21 360.27 197.68 360.17 197.12C360.16 197.06 360.14 197 360.12 196.95C359.91 196.01 359.17 192.71 359.06 192.24Z" id="b16vtvNdZS"></path><path d="M378.52 163.58C375 160.42 371.65 157.06 368.49 153.53C368.38 153.42 368.25 153.34 368.11 153.29C367.52 152.62 366.89 151.99 366.22 151.4C365.8 151 365.13 151.01 364.72 151.43C364.47 151.7 364.38 152.07 364.46 152.42C364.99 154.79 366.21 156.95 367.96 158.63C367.62 159.31 367.24 160.07 366.96 160.83C367.13 160.89 367.24 161.06 367.24 161.24C367.22 161.61 367.14 161.98 366.99 162.32C366.93 162.56 366.83 162.79 366.69 163C366.63 163.09 366.55 163.15 366.45 163.19C366.52 164.19 367.04 165.11 367.86 165.68C367.7 166.71 367.92 167.77 368.49 168.65C368.49 168.65 368.53 168.69 368.6 168.74C368.7 168.74 368.76 168.74 368.77 168.74C370.24 169.13 371.68 169.62 373.08 170.22C373.29 170.36 373.34 170.66 373.19 170.87C373.16 170.92 373.12 170.96 373.08 170.99C374.17 171.18 375.28 171.3 376.38 171.35C376.63 171.37 376.88 171.29 377.06 171.12C377.11 171.15 377.51 171.36 377.56 171.39C378.08 171.67 378.73 171.47 379.01 170.95C379.09 170.81 379.14 170.64 379.14 170.48C379.16 170.35 379.16 170.23 379.14 170.1C379.19 170.13 379.57 170.37 379.61 170.4C379.62 171.07 380.16 171.61 380.83 171.61C380.92 171.6 381 171.59 381.09 171.58C381.72 171.48 382.17 170.91 382.13 170.27C382.12 170.11 382.08 169.95 382.01 169.8C382.13 169.9 383.02 170.67 383.13 170.76C383.23 170.88 383.41 170.89 383.53 170.78C383.6 170.72 383.63 170.63 383.62 170.54C383.63 170.49 383.63 170.45 383.62 170.4C384.22 170.99 384.78 171.62 385.28 172.29C392.65 178.57 385.81 170.2 385.6 169.97C386.13 169.65 379.12 164.11 378.52 163.58ZM380.26 170.61C380.58 170.6 380.87 170.45 381.07 170.2C381.07 170.2 381.07 170.2 381.07 170.2C381.21 170.27 381.38 170.22 381.45 170.08C381.46 170.07 381.46 170.06 381.47 170.05C381.47 170.05 381.47 170.05 381.47 170.05C381.64 170.36 381.53 170.77 381.21 170.95C381.16 170.97 381.11 170.99 381.05 171.01C380.72 171.12 380.37 170.94 380.26 170.61Z" id="g2POxSq5a"></path><path d="M380.58 167.85C379.73 166.98 378.33 166.96 377.45 167.81C377.44 167.82 377.42 167.84 377.4 167.85C377.16 167.31 376.96 166.76 376.8 166.19C376.4 164.97 375.1 164.3 373.87 164.7C372.73 165.06 372.06 166.25 372.32 167.42C372.86 169.7 374.1 171.76 375.86 173.31C377.69 174.64 379.75 175.63 381.94 176.22C383.22 176.53 384.5 175.74 384.81 174.47C384.88 174.16 384.9 173.85 384.85 173.54C384.86 173.52 384.98 173.35 385 173.33C385.62 172.23 385.26 170.84 384.19 170.18C382.85 169.64 381.62 168.85 380.58 167.85Z" id="c26XlIQCv"></path><path d="M371.77 165.62C371.8 165.56 371.8 165.48 371.77 165.42C371.77 165.42 371.77 165.42 371.77 165.42C370.33 164.06 369.54 163.3 369.38 163.15C369.04 162.81 368.68 162.49 368.37 162.13C368.07 161.77 366.69 158.88 369 159.47C369.7 159.64 370.89 160.98 371.51 161.47C372.13 161.96 373.1 162.83 373.87 163.53C374.15 163.77 374.55 163.38 374.29 163.11C372.15 161.22 370.31 159.71 369.87 159.33C369.15 158.79 368.43 158.2 367.6 158.92C366.97 159.46 366.77 160.35 367.11 161.11C366.94 161.87 366.35 162.58 366.47 163.4C366.68 164.19 367.14 164.89 367.77 165.42C367.81 165.45 368.09 165.74 368.13 165.78C368.11 165.83 368.11 165.88 368.13 165.93C368.13 166.87 367.73 167.99 368.62 168.63C369 168.87 369.41 169.05 369.85 169.16C370.06 169.23 371.75 169.79 371.96 169.86C372.1 169.9 372.25 169.83 372.3 169.69C372.3 169.68 372.3 169.67 372.3 169.67C373.49 171.68 375.37 173.18 377.59 173.88C377.88 174.03 378.03 173.47 377.67 173.35C374.21 172.36 371.82 169.22 371.77 165.62ZM367.2 162.55C367.2 162.32 367.37 162.09 367.47 161.88C368.57 163.29 369.84 164.56 371.25 165.66C371.25 165.66 371.25 165.79 371.25 165.85C371.15 165.79 371.03 165.79 370.94 165.85C369.89 166.93 368.26 165.19 367.64 164.43C367.13 163.95 366.96 163.21 367.2 162.55ZM368.58 167.42C368.54 167.02 368.54 166.61 368.58 166.21C369.39 166.82 370.47 167.21 371.21 166.47C371.3 167.47 371.57 168.45 372.02 169.35C371.26 169.04 370.32 168.82 369.49 168.48C369.02 168.37 368.63 167.94 368.58 167.42Z" id="br5Y1LRn"></path><path d="M410.2 187.99C409.39 186.52 380.56 166.42 378.9 164.04C374.58 168.85 373.66 175.82 376.57 181.59C376.57 181.59 392.1 202.37 400.75 204.69" id="dJUWn5lvu"></path><path d="M363.69 191.81C363.69 191.81 372.28 211.59 378.46 209.98C384.64 208.38 385.32 191.43 399.41 187.31C413.51 183.19 403.34 232.65 384.98 232.88C366.62 233.11 355.92 218.99 350.9 201.9C353.46 199.88 355.34 193.83 363.69 191.81Z" id="bbZ959QhQ"></path><path d="M398.94 380.05C398.63 381.34 397.67 382.37 396.41 382.77C396.19 383.08 395.87 383.29 395.5 383.37C392.77 383.79 389.99 383.56 387.36 382.71C384.04 381.96 371 378.12 375.23 386.94C377.67 388.38 380.37 389.57 382.79 390.82C384.19 391.52 385.58 392.22 387 392.86C387.76 393.29 388.59 393.6 389.46 393.76C391.35 393.9 395.6 392.18 395.75 392.63C395.9 393.08 396.58 396.54 396.58 396.54C396.58 396.54 408.46 400.02 408.33 392.25C408.39 391.23 405.52 377.08 405.52 377.08C404.2 377.68 399.6 379.75 398.94 380.05Z" id="c1mVbjSUIk"></path><path d="M411.49 366.05C411.49 366.05 399.68 361.89 396.92 361.91C396.92 361.91 389.65 363.24 394.07 367.96C394.07 367.96 406.69 374.83 408.29 374.95C409.9 375.06 413.64 373.57 413.77 373.97C413.9 374.36 414.51 377.37 414.51 377.37C414.51 377.37 424.84 380.39 424.73 373.59C424.73 372.7 422.22 360.36 422.22 360.36" id="a3moXlziTA"></path><path d="M410.99 238.43C410.73 232.6 414.77 236.02 414.36 233.73C410.81 215.16 385.3 239.64 385.3 239.64C384.26 240.63 384.6 246.39 384.49 247.71C383.51 258.65 383.2 267.43 383.05 269.63C381.48 306.56 386.08 342.81 390.86 379.35C397.13 384.81 401.06 386.26 410.11 381.69C410.11 357.53 409.88 333.37 409.48 309.22C409.48 308.49 409.48 307.77 409.46 307.05C408.48 276.48 408.99 253.61 410.99 238.43Z" id="cJilthH4x"></path><path d="M422.14 320.18C420.95 306.39 421.29 292.58 421.12 278.77C419.4 261.65 417.66 239.89 417.66 239.89C416.25 240.28 404.91 243.44 403.49 243.84C403.49 243.84 394.29 363.16 408.42 368.22C408.42 368.22 424.73 364.09 424.73 364.09C424.73 364.09 424.71 357.08 424.62 347.33C424.03 338.24 422.92 329.17 422.14 320.18Z" id="f1selj7yuT"></path><path d="M417.91 231.95C416.88 224.37 416.88 216.68 417.91 209.1C418.78 201.77 418.83 194.19 414.32 187.94C407.8 184.16 398.73 187.54 393.24 191.58C385.81 197.06 383.32 234.26 383.41 245.76C383.41 247.39 393.27 248.22 394.37 248.3C399.49 248.77 404.64 248.38 409.63 247.16C413.19 246.2 417.61 244.44 418.61 240.47C418.72 240.02 418.79 239.55 418.82 239.08C418.74 236.68 418.43 234.29 417.91 231.95Z" id="a1lPPKFf16"></path><path d="M408.17 249.55C407.88 249.76 407.71 250.09 407.73 250.45C414.45 271.04 403.31 292.33 405.46 313.32C406.59 324.37 408.56 335.27 409.24 346.4C409.91 358.22 409.79 370.06 408.88 381.86C408.78 383.19 410.77 383.07 410.94 381.77C411.85 369.97 411.97 358.12 411.3 346.31C410.62 334.58 408.33 323.07 407.39 311.4C405.61 290.75 416.27 270.17 409.62 249.81C409.29 249.34 408.64 249.22 408.17 249.55Z" id="hb44MCUFM"></path><path d="M383.85 232.9C383.85 233.6 383.62 237.94 383.56 238.57C391.8 236.68 397.86 226.27 398.68 217.52C398.85 216.27 396.79 216.27 396.66 217.6C396.02 224.88 390.9 230.99 383.85 232.9Z" id="c7l3TXJAgs"></path><path d="M397.09 186.07C398.83 193.38 411.41 186.44 414.72 181.06C418.02 175.68 413.36 164.34 401.62 166.93C401 167.06 395.35 178.75 397.09 186.07Z" id="b5dEulF1Rt"></path><path d="M401.72 168.53C401.63 170.8 402.9 172.91 404.95 173.88C408.35 175.28 411.16 176.26 410.9 177.85C410.64 179.43 404.68 177.38 404.53 181C404.43 183.45 404.66 185.91 405.21 188.3C405.52 190.18 416.06 185.05 419.84 175.86C423.61 166.68 415.21 163.87 414.79 163.77C413.6 161.89 411.74 160.54 409.58 160C405.44 158.92 404.19 160.49 404.19 160.49C402.29 159.23 399.79 159.4 398.07 160.9C395.22 163.03 394.63 167.07 396.76 169.92C397.38 170.74 398.18 171.41 399.11 171.86C399.63 171.19 401.2 169.2 401.72 168.53Z" id="a1aewSm6gI"></path><path d="M472.43 260.22C475.09 260.07 477.74 260.59 480.14 261.73C482.6 263.12 484.52 265.3 485.58 267.93C486.77 270.42 487.28 273.97 489.75 275.48C490.72 275.99 491.55 276.72 492.19 277.6C493.41 279.32 493.69 281.54 492.95 283.51C491.85 285.7 487.28 287.04 485.22 286.65" id="awXdmWtsR"></path><path d="M470.41 260.48C464.05 261.05 458.77 265.61 457.28 271.82C456.51 274.86 456.48 278.04 457.19 281.09C457.77 283.55 459.23 287.82 462.23 288.01C466.29 288.25 467.59 284.46 468.88 281.34C470.16 278.22 471.51 274.78 474.75 273.55C478.04 272.29 481.76 273.13 484.2 275.67C481.44 272.63 473.17 263.52 470.41 260.48Z" id="k1ImSjNyIo"></path><path d="M482.12 267.11C480.78 265.03 479.18 263.13 477.36 261.45C471.69 258.71 464.61 261.22 460.36 266.02C460.93 266.19 461.72 266.22 462.25 266.38C464.75 267.34 466.97 268.91 468.71 270.95C471.2 273.71 473.15 277.09 475.36 280.03C478.95 284.8 483.71 288.73 489.85 285.87C493.78 283.96 490.7 279.2 488.98 276.97C486.52 273.8 484.48 270.34 482.12 267.11Z" id="caov49Km5"></path><path d="M508.89 236.15C508.89 236.15 521.61 235.15 521.36 255.27C521.36 255.27 502.13 262.14 506.25 250.03" id="h3m4ixQtah"></path><path d="M519.6 244.61C518.32 239.31 513.56 235.58 508.1 235.62C499.39 235.85 492.87 244.69 491.4 255.12C490.68 261.48 493.06 267.81 497.8 272.12C498.22 272.48 501.58 275.35 502 275.71C509.74 272.72 506.87 261.52 507.06 255.95C506.93 249.83 513.8 245.37 519.6 244.61Z" id="k1f5QS2D10"></path><path d="M538.74 259.4C537.1 256.12 534.06 253.76 530.47 253C529.75 254.38 524.02 265.41 523.31 266.79C523.31 266.79 533.98 248.13 529.62 262.5C529.62 262.5 539.63 292.98 541.59 271.55C541.63 271.14 541.65 270.74 541.69 270.32C541.5 266.52 540.5 262.79 538.74 259.4Z" id="bvmoRt1Xy"></path><path d="M484.18 327C485.12 332.05 486.54 337 488.43 341.77C490.32 346.52 491.64 352.62 496.42 355.3C501.34 357.97 507.25 358.04 512.24 355.51C516.34 353 517.81 347.31 519.3 343.08C521.09 337.86 522.32 332.47 522.97 327C527.5 291.8 491.1 306.22 491.1 306.22C489.71 310.38 481.54 312.45 484.18 327Z" id="e6FAeJhweZ"></path><path d="M517.94 308.35C517.94 311.14 511.69 313.4 503.98 313.4C496.27 313.4 490.02 311.14 490.02 308.35C490.02 305.57 496.27 303.31 503.98 303.31C511.69 303.31 517.94 305.57 517.94 308.35Z" id="b1drC2ONYs"></path><path d="M498.37 267.75C496.9 260.78 499.7 253.59 505.51 249.45C506.57 248.67 505.51 246.88 504.47 247.67C495.55 254.15 493.82 265.22 499.03 274.65C500.9 277.46 502.48 280.45 503.73 283.59C505.02 287.78 503.58 290.82 501.62 293.98C501.73 290.86 500.62 287.82 498.52 285.51C496.2 283.36 492.85 283 489.91 282.04C484.35 280.15 479.46 276.99 478.57 270.7C478.36 269.4 476.38 269.95 476.59 271.25C477.45 276.11 480.66 280.23 485.16 282.25C487.85 283.4 490.61 284.36 493.44 285.12C495.92 286.07 497.89 288 498.9 290.46C500.22 293.5 499.31 295.58 498.58 298.53C497.61 302.31 496.08 305.63 498.71 309.26C499.48 310.32 501.28 309.26 500.49 308.22C496.31 302.46 502.98 296.89 505.25 292.01C506.73 288.64 506.68 284.79 505.11 281.45C503.22 276.75 499.45 272.8 498.37 267.75Z" id="aEYo5ToED"></path><path d="M516.56 282.62C516.75 284.77 517.15 286.89 517.75 288.95C518.45 290.7 518.85 292.55 518.92 294.43C518.32 297.11 516.43 299.31 513.88 300.32C510.22 301.68 507.44 304.73 506.44 308.51C506.36 309.07 506.76 309.6 507.33 309.67C507.79 309.73 508.24 309.48 508.42 309.05C510.46 301.5 520.89 302.67 520.96 294.43C520.96 290.41 518.87 286.65 518.62 282.62C518.19 275.6 522.78 269.4 530.32 270.8C531.6 271.02 532.17 269.04 530.86 268.81C522.04 267.26 516.03 274.08 516.56 282.62Z" id="dLaB2N8AF"></path><path d="M523.02 253.59C522.18 253.93 521.36 254.32 520.57 254.78C505.25 266.11 516.13 291.75 518.49 291.54C526.29 290.9 525.48 286.31 528.11 273.46C529.03 267.47 534.23 263.08 540.29 263.18C539.88 261.91 539.37 260.68 538.74 259.5C535.32 253.19 529.11 251.72 523.02 253.59Z" id="a1iBOWeCQw"></path><path d="M522.4 261.39C516.73 270.83 518.09 281.66 518.83 291.99C518.92 293.32 520.98 293.32 520.89 291.99C520.34 284.44 519.3 277.13 521.32 269.8C522.32 266.21 523.51 262.24 526.39 259.63C529.55 256.83 534.09 256.18 537.91 257.99C537.83 257.88 537.21 257.04 537.14 256.93C536.49 256.42 535.95 255.83 535.38 255.23C530.2 254.42 525.05 256.87 522.4 261.39Z" id="b1busNfGUR"></path></defs><g><g><g><use xlink:href="#ao2fOKdZ" opacity="1" fill="#acf4e6" fill-opacity="1"></use><g><use xlink:href="#ao2fOKdZ" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-opacity="0"></use></g></g><g><use xlink:href="#aa8FUeeyp" opacity="1" fill="url(#gradientaaLvLStAR)"></use><g><use xlink:href="#aa8FUeeyp" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-opacity="0"></use></g></g><g><use xlink:href="#br8UzWX3a" opacity="1" fill="url(#gradientb1dTkA45x0)"></use><g><use xlink:href="#br8UzWX3a" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-opacity="0"></use></g></g><g><use xlink:href="#aH3cSgh2q" opacity="1" fill="url(#gradienth3G5DHujEY)"></use><g><use xlink:href="#aH3cSgh2q" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-opacity="0"></use></g></g><g><use xlink:href="#jeRHaoR4a" opacity="1" fill="#34323d" fill-opacity="1"></use><g><use xlink:href="#jeRHaoR4a" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-opacity="0"></use></g></g><g><use xlink:href="#dzkkuzDI" opacity="1" fill="#435950" fill-opacity="1"></use><g><use xlink:href="#dzkkuzDI" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-opacity="0"></use></g></g><g><use xlink:href="#kmklQeauJ" opacity="1" fill="#334c42" fill-opacity="1"></use><g><use xlink:href="#kmklQeauJ" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-opacity="0"></use></g></g><g><use xlink:href="#bNCq0Rk5G" opacity="1" fill="#9a6cff" fill-opacity="1"></use><g><use xlink:href="#bNCq0Rk5G" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-opacity="0"></use></g></g><g><use xlink:href="#aOtVx6abz" opacity="1" fill="#34323d" fill-opacity="1"></use><g><use xlink:href="#aOtVx6abz" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-opacity="0"></use></g></g><g><use xlink:href="#a3nibfwLuM" opacity="1" fill="#334c42" fill-opacity="1"></use><g><use xlink:href="#a3nibfwLuM" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-opacity="0"></use></g></g><g><use xlink:href="#a3z1TiT1n5" opacity="1" fill="#2f2e36" fill-opacity="1"></use><g><use xlink:href="#a3z1TiT1n5" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-opacity="0"></use></g></g><g><use xlink:href="#b4RdRIpn" opacity="1" fill="#334c42" fill-opacity="1"></use><g><use xlink:href="#b4RdRIpn" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-opacity="0"></use></g></g><g><use xlink:href="#e1dIhvjFv1" opacity="1" fill="#68e1fd" fill-opacity="1"></use><g><use xlink:href="#e1dIhvjFv1" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-opacity="0"></use></g></g><g><use xlink:href="#aXH7GYm1A" opacity="1" fill="#68e1fd" fill-opacity="1"></use><g><use xlink:href="#aXH7GYm1A" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-opacity="0"></use></g></g><g><use xlink:href="#babGnKggV" opacity="1" fill="#ffe427" fill-opacity="1"></use><g><use xlink:href="#babGnKggV" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-opacity="0"></use></g></g><g><use xlink:href="#g31oBa3Vi" opacity="1" fill="#ffe427" fill-opacity="1"></use><g><use xlink:href="#g31oBa3Vi" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-opacity="0"></use></g></g><g><use xlink:href="#c9oXJvy8R" opacity="1" fill="#ffe427" fill-opacity="1"></use><g><use xlink:href="#c9oXJvy8R" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-opacity="0"></use></g></g><g><use xlink:href="#bqzHWLJ9n" opacity="1" fill="#ffe427" fill-opacity="1"></use><g><use xlink:href="#bqzHWLJ9n" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-opacity="0"></use></g></g><g><use xlink:href="#a4sCDqmpI8" opacity="1" fill="#ffe427" fill-opacity="1"></use><g><use xlink:href="#a4sCDqmpI8" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-opacity="0"></use></g></g><g><use xlink:href="#i2x92wBAMt" opacity="1" fill="#ffe427" fill-opacity="1"></use><g><use xlink:href="#i2x92wBAMt" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-opacity="0"></use></g></g><g><use xlink:href="#a37ZjJzggA" opacity="1" fill="#68e1fd" fill-opacity="1"></use><g><use xlink:href="#a37ZjJzggA" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-opacity="0"></use></g></g><g><use xlink:href="#b46JI3n5ps" opacity="1" fill="#ffe427" fill-opacity="1"></use><g><use xlink:href="#b46JI3n5ps" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-opacity="0"></use></g></g><g><use xlink:href="#d8ELul3CD" opacity="1" fill="#ffe427" fill-opacity="1"></use><g><use xlink:href="#d8ELul3CD" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-opacity="0"></use></g></g><g><use xlink:href="#a1kMPz6DPN" opacity="1" fill="#ffffff" fill-opacity="1"></use><g><use xlink:href="#a1kMPz6DPN" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-opacity="0"></use></g></g><g><use xlink:href="#c18LKdBm4L" opacity="1" fill="#7f47dd" fill-opacity="1"></use><g><use xlink:href="#c18LKdBm4L" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-opacity="0"></use></g></g><g><use xlink:href="#c2jEMMtm" opacity="1" fill="#7f47dd" fill-opacity="1"></use><g><use xlink:href="#c2jEMMtm" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-opacity="0"></use></g></g><g><use xlink:href="#h1QFME0dkr" opacity="1" fill="#ffe427" fill-opacity="1"></use><g><use xlink:href="#h1QFME0dkr" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-opacity="0"></use></g></g><g><use xlink:href="#b16vtvNdZS" opacity="1" fill="#fcbf81" fill-opacity="1"></use><g><use xlink:href="#b16vtvNdZS" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-opacity="0"></use></g></g><g><use xlink:href="#g2POxSq5a" opacity="1" fill="#fcbf81" fill-opacity="1"></use><g><use xlink:href="#g2POxSq5a" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-opacity="0"></use></g></g><g><use xlink:href="#c26XlIQCv" opacity="1" fill="#fcbf81" fill-opacity="1"></use><g><use xlink:href="#c26XlIQCv" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-opacity="0"></use></g></g><g><use xlink:href="#br5Y1LRn" opacity="1" fill="#34323d" fill-opacity="1"></use><g><use xlink:href="#br5Y1LRn" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-opacity="0"></use></g></g><g><use xlink:href="#dJUWn5lvu" opacity="1" fill="#22b68e" fill-opacity="1"></use><g><use xlink:href="#dJUWn5lvu" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-opacity="0"></use></g></g><g><use xlink:href="#bbZ959QhQ" opacity="1" fill="#22b68e" fill-opacity="1"></use><g><use xlink:href="#bbZ959QhQ" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-opacity="0"></use></g></g><g><use xlink:href="#c1mVbjSUIk" opacity="1" fill="#e55600" fill-opacity="1"></use><g><use xlink:href="#c1mVbjSUIk" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-opacity="0"></use></g></g><g><use xlink:href="#a3moXlziTA" opacity="1" fill="#e55600" fill-opacity="1"></use><g><use xlink:href="#a3moXlziTA" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-opacity="0"></use></g></g><g><use xlink:href="#cJilthH4x" opacity="1" fill="#ffe427" fill-opacity="1"></use><g><use xlink:href="#cJilthH4x" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-opacity="0"></use></g></g><g><use xlink:href="#f1selj7yuT" opacity="1" fill="#ffe427" fill-opacity="1"></use><g><use xlink:href="#f1selj7yuT" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-opacity="0"></use></g></g><g><use xlink:href="#a1lPPKFf16" opacity="1" fill="#22b68e" fill-opacity="1"></use><g><use xlink:href="#a1lPPKFf16" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-opacity="0"></use></g></g><g><use xlink:href="#hb44MCUFM" opacity="1" fill="#34323d" fill-opacity="1"></use><g><use xlink:href="#hb44MCUFM" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-opacity="0"></use></g></g><g><use xlink:href="#c7l3TXJAgs" opacity="1" fill="#06825e" fill-opacity="1"></use><g><use xlink:href="#c7l3TXJAgs" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-opacity="0"></use></g></g><g><use xlink:href="#b5dEulF1Rt" opacity="1" fill="#fcbf81" fill-opacity="1"></use><g><use xlink:href="#b5dEulF1Rt" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-opacity="0"></use></g></g><g><use xlink:href="#a1aewSm6gI" opacity="1" fill="#34323d" fill-opacity="1"></use><g><use xlink:href="#a1aewSm6gI" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-opacity="0"></use></g></g><g><use xlink:href="#awXdmWtsR" opacity="1" fill="#8fdb5e" fill-opacity="1"></use><g><use xlink:href="#awXdmWtsR" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-opacity="0"></use></g></g><g><use xlink:href="#k1ImSjNyIo" opacity="1" fill="#1e8c0e" fill-opacity="1"></use><g><use xlink:href="#k1ImSjNyIo" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-opacity="0"></use></g></g><g><use xlink:href="#caov49Km5" opacity="1" fill="#8fdb5e" fill-opacity="1"></use><g><use xlink:href="#caov49Km5" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-opacity="0"></use></g></g><g><use xlink:href="#h3m4ixQtah" opacity="1" fill="#1e8c0e" fill-opacity="1"></use><g><use xlink:href="#h3m4ixQtah" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-opacity="0"></use></g></g><g><use xlink:href="#k1f5QS2D10" opacity="1" fill="#8fdb5e" fill-opacity="1"></use><g><use xlink:href="#k1f5QS2D10" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-opacity="0"></use></g></g><g><use xlink:href="#bvmoRt1Xy" opacity="1" fill="#1e8c0e" fill-opacity="1"></use><g><use xlink:href="#bvmoRt1Xy" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-opacity="0"></use></g></g><g><use xlink:href="#e6FAeJhweZ" opacity="1" fill="#68e1fd" fill-opacity="1"></use><g><use xlink:href="#e6FAeJhweZ" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-opacity="0"></use></g></g><g><use xlink:href="#b1drC2ONYs" opacity="1" fill="#34323d" fill-opacity="1"></use><g><use xlink:href="#b1drC2ONYs" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-opacity="0"></use></g></g><g><use xlink:href="#aEYo5ToED" opacity="1" fill="#1e8c0e" fill-opacity="1"></use><g><use xlink:href="#aEYo5ToED" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-opacity="0"></use></g></g><g><use xlink:href="#dLaB2N8AF" opacity="1" fill="#1e8c0e" fill-opacity="1"></use><g><use xlink:href="#dLaB2N8AF" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-opacity="0"></use></g></g><g><use xlink:href="#a1iBOWeCQw" opacity="1" fill="#8fdb5e" fill-opacity="1"></use><g><use xlink:href="#a1iBOWeCQw" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-opacity="0"></use></g></g><g><use xlink:href="#b1busNfGUR" opacity="1" fill="#1e8c0e" fill-opacity="1"></use><g><use xlink:href="#b1busNfGUR" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-opacity="0"></use></g></g></g></g></svg></span>
+        </div>
+                    <div class="elementor-icon-box-content">
+            <h3 class="elementor-icon-box-title">
+                <span>
+                    Artificial Intelligence 					</span>
+            </h3>
+                                <p class="elementor-icon-box-description">
+                    Aumenta il rendimento della tua azienda con soluzioni AI.
+Prevedi la domanda dei tuoi clienti, verifica se un prodotto è di buona qualità, automatizza i processi decisionali. 					</p>
+                        </div>
+    </div>
+            </div>
+            </div>
+                    </div>
+                </div>
+    </div>
+            <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-64979b66" data-id="64979b66" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+        <div class="elementor-column-wrap elementor-element-populated">
+                        <div class="elementor-widget-wrap">
+                    <div class="elementor-element elementor-element-9b8add4 elementor-view-default elementor-mobile-position-top elementor-vertical-align-top elementor-widget elementor-widget-icon-box animated fadeIn" data-id="9b8add4" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:400}" data-widget_type="icon-box.default">
+            <div class="elementor-widget-container">
+                <div class="elementor-icon-box-wrapper">
+                    <div class="elementor-icon-box-icon">
+            <span class="elementor-icon elementor-animation-">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid meet" viewBox="0 0 640 580" width="640" height="580"><defs><path d="M8.72 335.48L393.98 557.9L630.76 423.42L243.75 201.26L243.75 201.26L8.72 335.48Z" id="c9fOaII9e"></path><path d="M473.33 466.93L359.83 531.29L251.57 463.94L354.51 412.94" id="b2OH88JXTO"></path><linearGradient id="gradienteyO7uO4QM" gradientUnits="userSpaceOnUse" x1="311.81" y1="533.68" x2="359.73" y2="469.1"><stop style="stop-color: #ffffff;stop-opacity: 0" offset="0%"></stop><stop style="stop-color: #d43500;stop-opacity: 1" offset="100%"></stop></linearGradient><path d="M254.85 361.09L164.91 417.93L74.98 370.36L177.9 319.37" id="af3d4HiHm"></path><linearGradient id="gradientc8JtVBsoC" gradientUnits="userSpaceOnUse" x1="143.56" y1="396.1" x2="174.22" y2="352.5"><stop style="stop-color: #ffffff;stop-opacity: 0" offset="0%"></stop><stop style="stop-color: #d43500;stop-opacity: 1" offset="100%"></stop></linearGradient><path d="M261.06 19.16L261.06 189.19L464.2 304.05L464.2 140.42L464.2 140.42L261.06 19.16Z" id="a4q0rsCnrv"></path><path d="M276.7 46.36L276.7 187.67" id="c7ebEaCpN"></path><path d="M311.79 68.3L311.79 209.63" id="b39wr6RPmA"></path><path d="M366.66 100.93L366.66 242.25" id="a6nzwoGoLL"></path><path d="M406.31 122.46L406.31 263.79" id="b1vSSA8qYo"></path><path d="M441.8 145.42L441.8 286.76" id="a1cN5C00K7"></path><path d="M585.03 339.64C592.16 335.13 578.01 336.37 575.93 336.82C573.84 337.28 567.75 346.97 567.75 346.97C573.79 345.24 579.59 342.78 585.03 339.64Z" id="b8CNeX4aH"></path><path d="M528.28 192.28C535.86 189.46 543.84 187.91 551.92 187.71C566.51 187.04 538.47 198.56 538.47 198.56" id="h1Lc1BLOcS"></path><path d="M612.5 255.09C621.06 297.67 604.86 336.85 576.31 342.59C547.77 348.33 517.68 318.46 509.12 275.88C500.56 233.3 516.76 194.13 545.31 188.39C573.85 182.65 603.94 212.51 612.5 255.09Z" id="c1zInXnjc0"></path><path d="M600.99 258.8C609.7 302.11 593.61 341.87 565.07 347.61C536.52 353.35 506.32 322.9 497.61 279.59C488.9 236.29 504.98 196.53 533.53 190.79C562.08 185.05 592.28 215.5 600.99 258.8Z" id="agpLgpluI"></path><path d="M549.3 269.29C549.3 222.9 549.3 197.14 549.3 191.98C549.3 191.98 530.53 182.21 508.77 207.88C514.17 216.07 527.68 236.54 549.3 269.29Z" id="o1bzMov6is"></path><path d="M549.3 269.29C581.37 284.18 599.19 292.45 602.75 294.1C602.75 294.1 610.47 212.21 549.36 191.18C549.35 201.59 549.33 227.63 549.3 269.29Z" id="b1g9sGabV6"></path><path d="M552.27 421.26L405.58 506.14L302.08 444.36L447.53 361.09L447.53 361.09L552.27 421.26Z" id="adi0VQLkJ"></path><path d="M302.08 444.36L325.95 432.6L302.08 420.84L302.08 420.84L302.08 444.36Z" id="b1HNA1yRUX"></path><path d="M552.27 421.26L528.17 410.11L552.27 397.74L552.27 397.74L552.27 421.26Z" id="bDgFK4HvS"></path><path d="M552.27 397.74L405.58 482.63L302.08 420.84L447.53 337.57L447.53 337.57L552.27 397.74Z" id="cSxJSXEc3"></path><path d="M321.9 409.5C312.86 411.06 307.83 411.92 306.83 412.1C306.83 412.1 317.96 429.67 326.29 435.24C321.35 428.23 322.15 419.17 322.19 410.96C322.15 410.76 322.05 410.28 321.9 409.5Z" id="eWzTFEbLX"></path><path d="M437.92 354.45L490.45 384.64" id="bKq7pqpg"></path><path d="M489.72 385.92C490.43 386.34 491.34 386.1 491.75 385.39C492.16 384.68 491.92 383.78 491.22 383.36C485.96 380.34 443.93 356.19 438.67 353.17C437.96 352.76 437.06 352.99 436.64 353.7C436.23 354.41 436.47 355.32 437.17 355.73C447.68 361.77 484.47 382.9 489.72 385.92Z" id="f1FXEv2Ttn"></path><path d="M431.09 358.92L515.6 407.49" id="d6gLadj8m9"></path><path d="M514.85 408.75C515.56 409.16 516.47 408.92 516.88 408.22C517.29 407.51 517.06 406.6 516.35 406.19C507.9 401.33 440.29 362.49 431.84 357.64C431.13 357.23 430.22 357.46 429.81 358.17C429.39 358.88 429.63 359.79 430.34 360.2C447.24 369.91 506.4 403.89 514.85 408.75Z" id="cIsKVSor"></path><path d="M424.25 364.1L508.77 412.67" id="iRLUxhZ20"></path><path d="M508.04 413.93C508.74 414.34 509.65 414.1 510.07 413.4C510.48 412.69 510.24 411.78 509.53 411.37C501.08 406.52 433.46 367.69 425 362.84C424.29 362.43 423.39 362.66 422.97 363.37C422.56 364.08 422.8 364.99 423.51 365.4C423.51 365.4 499.59 409.07 508.04 413.93Z" id="b2LYB7uq3i"></path><path d="M417.3 368.39L501.81 416.94" id="a7wQHFR8k"></path><path d="M501.07 418.28C501.77 418.7 502.68 418.46 503.09 417.75C503.51 417.04 503.27 416.13 502.56 415.72C494.11 410.87 426.5 372.03 418.05 367.17C417.34 366.76 416.43 367 416.02 367.7C415.61 368.41 415.85 369.32 416.55 369.73C433.46 379.44 492.61 413.43 501.07 418.28Z" id="e1TGwiRRT"></path><path d="M400.4 388.15L406.31 391.56L382.4 405.2L376.55 401.88L376.55 401.88L400.4 388.15Z" id="f76U9Ud9sn"></path><path d="M429.49 385.82L435.15 389.45L393.37 413.3L387.44 410.03L387.44 410.03L429.49 385.82Z" id="h7r54lwfH"></path><path d="M425.67 403.1L432.07 406.23L406.31 420.94L400.4 417.63L400.4 417.63L425.67 403.1Z" id="bdExyhW8Z"></path><path d="M446.55 404.81L452.79 408.06L419.13 427.3L413.18 424.01L413.18 424.01L446.55 404.81Z" id="bxirT1zkv"></path><path d="M437.92 424.54L443.95 427.83L431.5 434.94L425.63 431.62L425.63 431.62L437.92 424.54Z" id="ap0tkhHC4"></path><path d="M482.55 414.76L488.22 418.38L446.51 442.21L440.5 438.96L440.5 438.96L482.55 414.76Z" id="a8zGWMFcij"></path><path d="M353.41 403.98L405.96 434.18" id="c6spktYbJ"></path><path d="M405.17 435.38C405.88 435.79 406.78 435.55 407.2 434.85C407.61 434.14 407.37 433.23 406.67 432.82C401.41 429.8 359.37 405.64 354.12 402.62C353.41 402.21 352.5 402.45 352.09 403.16C351.68 403.86 351.91 404.77 352.62 405.18C363.13 411.22 399.91 432.36 405.17 435.38Z" id="b1SiLPHu2l"></path><path d="M346.58 408.47L431.09 457.02" id="d1iu2ZEA9l"></path><path d="M430.34 458.36C431.05 458.78 431.95 458.54 432.37 457.83C432.78 457.12 432.54 456.21 431.84 455.8C423.38 450.94 355.77 412.02 347.32 407.15C346.62 406.74 345.71 406.98 345.3 407.69C344.88 408.39 345.12 409.3 345.83 409.71C345.83 409.72 421.89 453.5 430.34 458.36Z" id="i2vXCpq2XU"></path><path d="M339.74 413.65L424.25 462.2" id="b70fP9gyY1"></path><path d="M423.52 463.48C424.23 463.9 425.14 463.66 425.55 462.95C425.97 462.24 425.73 461.34 425.02 460.92C416.57 456.07 348.96 417.23 340.51 412.37C339.8 411.96 338.89 412.2 338.48 412.91C338.07 413.61 338.31 414.52 339.01 414.93C355.91 424.64 415.07 458.63 423.52 463.48Z" id="eHSw3EoSN"></path><path d="M332.79 417.93L417.3 466.48" id="acAF8CwbK"></path><path d="M416.55 467.76C417.26 468.17 418.17 467.93 418.58 467.22C418.99 466.52 418.76 465.61 418.05 465.2C409.6 460.34 341.99 421.5 333.54 416.65C332.83 416.23 331.92 416.47 331.51 417.18C331.1 417.89 331.33 418.79 332.04 419.21C348.94 428.92 408.1 462.9 416.55 467.76Z" id="b9Yb3OAsg"></path><path d="M552.27 403.1L406.31 487.98L302.08 427.3" id="c2CxT3CrK"></path><path d="M551.76 408.47L405.8 493.36L301.55 432.68" id="c3IaFdoWyT"></path><path d="M551.76 416.23L405.8 501.1L301.55 440.42" id="dfVlAfnhe"></path><path d="M561.9 430.59L577.33 428.21L563.89 441.88" id="a3cF6vCtB"></path><path d="M566.49 436.54C566.49 439.82 564.44 442.49 561.9 442.49C559.37 442.49 557.31 439.82 557.31 436.54C557.31 433.25 559.37 430.59 561.9 430.59C564.44 430.59 566.49 433.25 566.49 436.54Z" id="gNmh7YRR7"></path><path d="M563.89 441.88L560.19 431.02L424.88 512.03L428.43 523L428.43 523L563.89 441.88Z" id="bkdU0sbDX"></path><path d="M431.25 517.51C431.25 520.79 429.19 523.45 426.66 523.45C424.12 523.45 422.07 520.79 422.07 517.51C422.07 514.22 424.12 511.56 426.66 511.56C429.19 511.56 431.25 514.22 431.25 517.51Z" id="dop9HgXqw"></path><path d="M577.33 428.21C573.78 428.75 571.81 429.05 571.42 429.11C572.77 429.66 573.46 431.18 572.97 432.56C573.55 431.98 575 430.53 577.33 428.21Z" id="a6cUi2vYJ"></path><path d="M240.67 351.32L238.88 349.96L240.48 328.63C246.11 328.83 249.25 328.94 249.87 328.96C249.87 328.96 249.4 338.08 251.41 340.31C251.41 340.31 259.05 341.45 259.58 341.67C259.58 341.67 263.87 341.08 265.49 342.91C265.49 342.91 259.38 349.11 255.46 349.74C252.78 350.09 250.06 349.99 247.41 349.47C247.41 349.47 246.96 343.95 245.58 344.39C245.58 344.39 243.61 350.59 243.61 350.59C243.22 350.69 242.24 350.93 240.67 351.32Z" id="a2wecFEsx"></path><path d="M235.22 335.54C235.22 335.54 240.32 342.47 254.15 339.48C255.62 339.17 258.93 303.6 260.55 285.08C252.81 282.98 244.69 282.66 236.81 284.14C236.05 306.45 235.54 325.26 235.22 335.54Z" id="b5ZYqN6t8S"></path><path d="M265.15 369.73L263.36 368.37L264.96 347.04C270.59 347.24 273.73 347.36 274.35 347.38C274.35 347.38 273.88 356.5 275.89 358.72C275.89 358.72 283.53 359.87 284.06 360.08C284.06 360.08 288.36 359.49 289.97 361.32C289.97 361.32 283.87 367.53 279.95 368.16C277.25 368.46 274.52 368.33 271.87 367.76C271.87 367.76 271.42 362.25 270.04 362.68C270.04 362.68 268.07 368.89 268.07 368.89C267.68 369 266.71 369.28 265.15 369.73Z" id="b5KnDg3uS"></path><path d="M249.64 283.33C250.78 291.68 251.84 297.47 252.02 297.9C252.47 298.97 261.06 351.99 261.06 351.99C271.2 356.08 283.2 352.66 283.2 352.66C283.2 352.66 279.06 311.3 278.73 304.38C278.73 303.26 278.62 302.38 278.61 302.16C278.31 296.12 274.68 290.74 269.19 288.19C263.02 285.4 256.39 283.75 249.64 283.33Z" id="b2W12O8aZA"></path><path d="M206.88 300.52C206.88 300.52 224.07 284.96 236.87 284.14C236.87 284.14 267.91 296.58 266.42 304.31C266.42 304.31 240.48 328.61 240.48 328.61" id="alLt8Y2aB"></path><path d="M228.19 263.08C227.06 262.28 226.65 260.78 227.22 259.52C228.19 257.35 235.96 240.02 236.93 237.85C237.59 236.39 239.32 235.73 240.79 236.39C240.9 236.44 241.02 236.51 241.13 236.57C242.66 237.53 254.9 245.15 256.43 246.11C257.72 246.91 258.18 248.58 257.47 249.93C256.34 252.09 247.3 269.42 246.17 271.59C245.46 273.04 243.71 273.63 242.27 272.92C242.17 272.87 242.07 272.81 241.97 272.75C239.22 270.82 229.57 264.05 228.19 263.08Z" id="a3SB3sStEQ"></path><path d="M226.97 262.33C225.84 261.53 225.43 260.04 226 258.77C226.97 256.6 234.74 239.27 235.71 237.1C236.37 235.64 238.1 234.98 239.57 235.64C239.68 235.7 239.8 235.76 239.91 235.82C241.44 236.78 253.68 244.4 255.21 245.36C256.5 246.16 256.96 247.83 256.25 249.18C255.12 251.34 246.08 268.68 244.95 270.84C244.24 272.29 242.49 272.88 241.04 272.17C240.94 272.12 240.85 272.07 240.75 272C238 270.07 228.34 263.3 226.97 262.33Z" id="i13CXTvFdo"></path><path d="M227.62 259.79L237.72 237.32L254.85 248L243.04 270.69L243.04 270.69L227.62 259.79Z" id="cvyxZ3YlL"></path><path d="M217.47 256.52C216.61 257.12 215.33 259.16 216.17 258.87C215.82 259.28 219.32 260.66 218.99 261.11C218.87 261.27 221.25 259.95 221.39 260.01C221.39 260.01 221.39 260.01 221.39 260.01C223.41 261.08 225.76 261.36 227.97 260.8C228.03 260.75 228.32 260.54 228.86 260.15L228.86 260.15C228.99 260.07 229.06 260.02 229.07 260.01C229.11 259.95 229.17 259.89 229.23 259.85C229.24 259.85 229.35 259.85 229.37 259.85C229.39 259.73 229.46 259.62 229.57 259.54C230.75 258.61 233.33 258.12 233.6 256.56C233.56 256.15 233.43 255.75 233.23 255.38C233.07 255.21 233.07 254.94 233.23 254.77C233.42 253.83 233.23 252.85 232.7 252.05C232.7 252.05 232.7 252.05 232.7 252.05C232.87 251.84 232.97 251.72 232.99 251.7C234.38 250.72 235.7 249.64 236.93 248.47C237.07 248.34 237.16 248.17 237.19 247.98C237.19 247.98 237.19 247.98 237.19 247.98C237.19 247.92 237.19 247.87 237.19 247.82C237.22 247.29 236.81 246.83 236.28 246.8C236.15 246.8 236.03 246.81 235.91 246.85C230.81 249.65 222.83 252.76 217.47 256.52Z" id="a4edmUU2m"></path><path d="M231.48 251.72C229.69 252.52 227.99 253.49 226.39 254.61C226.12 254.79 226.39 255.22 226.67 255.05C227.67 254.36 231.97 251.11 232.83 252.59C233.7 254.06 230.87 254.95 230.02 255.36C229.71 255.53 227.22 256.85 226.91 257.02C226.61 257.17 226.91 257.61 227.18 257.45C227.38 257.35 228.96 256.53 229.15 256.43C229.14 256.48 229.14 256.53 229.15 256.58C229.32 256.81 229.52 257.01 229.74 257.17C229.39 257.7 229.31 258.36 229.53 258.95C229.53 258.96 229.53 259.05 229.53 259.07C227.77 260.92 224.97 261.33 222.75 260.05C222.49 259.85 222.14 260.23 222.4 260.42C224.87 261.96 228.1 261.47 230 259.26C230.32 259.22 230.62 259.12 230.9 258.97C231.82 258.65 232.65 258.11 233.31 257.39C233.66 256.78 233.66 256.03 233.31 255.42C233.31 255.42 233.31 255.42 233.31 255.42C233.81 254.94 233.82 254.14 233.34 253.64C233.33 253.63 233.32 253.62 233.31 253.61C233.44 253.21 233.44 252.77 233.31 252.37C232.93 251.38 232.36 251.34 231.48 251.72ZM231.79 258C231.46 258.2 230.67 258.75 230.33 258.67C229.68 258.51 230.08 257.65 230.33 257.27C230.33 257.27 230.33 257.27 230.33 257.27C230.7 257.13 231.04 256.93 231.34 256.68C231.42 256.63 231.83 256.37 232.58 255.89C232.83 255.71 232.96 255.6 232.99 255.58C233.24 256 233.28 256.51 233.09 256.96C232.76 257.4 232.31 257.77 231.79 258ZM229.55 256.21C230.53 255.7 231.52 255.19 232.46 254.61C232.75 254.45 232.99 254.23 233.19 253.96C233.72 254.85 232.03 255.68 231.52 256.01C230.81 256.43 230.24 256.98 229.55 256.21Z" id="c3GC4vONTe"></path><path d="M224.37 260.68C224.19 261.11 223.33 263.24 221.79 267.08C213.38 262.72 208.72 260.3 207.78 259.81C207.78 259.81 211.13 255.6 220.66 252.68C221.4 254.28 224.11 253.45 224.37 260.68Z" id="f2aKEsuMsP"></path><path d="M250.9 262.81C250.25 261.25 249.65 259.97 248.93 258.47C248.89 258.43 248.85 258.38 248.81 258.34C248.47 257.77 247.73 257.58 247.16 257.92C246.76 258.16 246.53 258.62 246.58 259.08C246.83 260.5 247.39 261.85 248.22 263.02C248.1 263.09 247.99 263.17 247.9 263.26C245.93 265.51 246.37 268.93 246.6 271.69C246.64 272.28 247.15 272.72 247.74 272.68C247.9 272.67 248.06 272.62 248.2 272.54C248.39 272.54 248.58 272.49 248.75 272.4C250.56 271.15 251.86 269.28 252.39 267.14C253.57 263.65 255.03 259.77 253.85 256.05C252.81 258.36 251.76 260.44 250.9 262.81Z" id="a1iq7sHc3C"></path><path d="M206.64 254.4C207.9 254.57 218.85 259.05 223.4 266.84C223.96 269.22 224.33 271.64 224.52 274.07C224.94 277.32 225.27 280.57 225.43 283.92C225.64 287.48 225.59 291.05 225.27 294.6C225.11 296.11 225.02 296.88 224.76 298.38C224.18 298.89 223.51 299.29 222.79 299.58C207.61 304.86 196.46 296.31 196 295.09C195.55 293.87 194.82 276.34 194.47 265.92C194.27 261.35 197.2 257.22 201.58 255.89C202.59 255.59 206.13 254.55 206.64 254.4Z" id="fv1D9WLNs"></path><path d="M212.06 256.78C212.06 256.78 198.27 251.48 197.76 247.96C197.25 244.43 206.11 232.12 214.97 237.77C214.39 241.58 218.38 254.93 212.06 256.78Z" id="a2IVUw3rVw"></path><path d="M217.12 240.39C217.89 237.32 215.15 233.32 208.79 232.73C202.43 232.14 191.85 235.61 193.48 252.25C195.12 268.89 211.88 261.74 212.96 256.43C213.54 252.53 213.4 248.55 212.53 244.71C212.73 244.41 216.35 243.47 217.12 240.39Z" id="c14CVcnXIO"></path><path d="M212.53 244.71C212.53 244.71 213.59 250.4 215.9 252.84C215.9 252.84 220.07 259.73 217.24 263.12C217.24 263.12 217.24 268.36 221.18 271.61C221.18 271.61 222.71 288.06 208.29 284.83C200.16 283.2 192.76 279.01 187.18 272.87C187.18 272.87 190.88 246.95 194.8 240.87" id="a5bUecmrJ"></path><path d="M223.44 267.08C223.44 267.08 226.71 278.01 229.96 278.35C229.96 278.35 238.17 273.86 241.64 267.55C246.67 267.07 251.15 270.76 251.63 275.8C251.65 275.97 251.66 276.14 251.66 276.32C251.66 276.32 240.18 299.6 223.44 293.91" id="a79Q1ajp3"></path><path d="M243.7 247.11C246.68 248.27 248 252.02 246.65 255.49C245.3 258.95 241.79 260.82 238.81 259.66C235.83 258.5 234.51 254.75 235.86 251.28C237.21 247.81 240.72 245.95 243.7 247.11Z" id="a2FzXdn5D"></path><path d="M239.14 251.09L239.89 253.65L245.77 251.54L246.03 253.35L238.86 255.97L237.33 251.66L237.33 251.66L239.14 251.09Z" id="i1jVOpjSgF"></path><path d="M148.46 304.74C148.57 291.43 153.78 278.66 163.02 269.07C171.5 260.37 184.33 256.07 195.69 261.98C205.12 266.88 209.69 276.28 212.98 285.91C216.92 297.43 218.26 312.22 232.3 315.79C237.76 317.17 243.47 316.22 249.08 315.79C258.93 315.12 269.19 318.29 272.23 328.73C277.68 347.4 252.53 363.33 238.45 369.36C213.44 379.64 184.67 373.42 166.15 353.72C165.15 352.67 164.19 351.57 163.27 350.43C153.07 330.96 148.13 315.73 148.46 304.74Z" id="a54jhY3gnw"></path><path d="M211.54 354.33C195.45 353.5 185.29 343.68 186.37 327.39C186.98 318.45 189.82 309.52 189.01 300.52C187.65 285.18 173.08 272.6 158.21 275.59C151.89 284.4 148.45 294.94 148.36 305.78C147.87 322.27 153.1 338.41 163.17 351.48C164.55 353.19 165.76 354.49 166.05 354.82C184.57 374.52 213.34 380.75 238.35 370.46C252.47 364.43 277.58 348.5 272.13 329.83C271.97 329.53 271.87 329.3 271.77 329.02C261.79 347.08 229.27 355.24 211.54 354.33Z" id="awnRzNQv7"></path><path d="M279.75 166.58C279.75 166.58 288.73 122.68 306.75 130.63C325.86 139.06 308.46 175.24 329.18 186.02C349.25 196.45 343.42 120.11 366.61 129.12C387.32 137.15 379.58 167.99 379.6 183.75C379.6 191.04 377.14 218.02 391.32 222.16C416.12 229.38 405.84 155.07 437.8 171.95" id="c6KBJym64"></path><path d="M283.73 166.89C283.73 169.48 281.99 171.58 279.85 171.58C277.7 171.58 275.97 169.48 275.97 166.89C275.97 164.3 277.7 162.2 279.85 162.2C281.99 162.2 283.73 164.3 283.73 166.89Z" id="g27FaKPWmd"></path><path d="M441.8 173C441.8 175.59 440.06 177.68 437.92 177.68C435.78 177.68 434.04 175.59 434.04 173C434.04 170.41 435.78 168.31 437.92 168.31C440.06 168.31 441.8 170.41 441.8 173Z" id="aX8CCj8I"></path><path d="M353.17 145.42C353.17 148.01 351.44 150.11 349.29 150.11C347.15 150.11 345.41 148.01 345.41 145.42C345.41 142.83 347.15 140.74 349.29 140.74C351.44 140.74 353.17 142.83 353.17 145.42Z" id="ecjYwXRn2"></path><path d="M383.72 177.68C383.72 180.27 381.98 182.37 379.84 182.37C377.7 182.37 375.96 180.27 375.96 177.68C375.96 175.1 377.7 173 379.84 173C381.98 173 383.72 175.1 383.72 177.68Z" id="f1n1tFOjCT"></path><path d="M199.23 67.8C201.38 66.57 204.11 67.31 205.34 69.46C205.74 70.15 205.94 70.94 205.93 71.74C205.93 75.68 205.93 107.19 205.93 111.13C205.93 115.02 203.83 118.61 200.44 120.51C190.12 126.28 107.61 172.41 97.29 178.18C95.14 179.38 92.41 178.62 91.21 176.46C90.82 175.78 90.63 175.02 90.63 174.24C90.63 170.09 90.63 136.89 90.63 132.74C90.63 131.14 91.49 129.66 92.88 128.86C92.88 128.86 188.6 73.91 199.23 67.8Z" id="d2AgR3JSNE"></path><path d="M100.46 169.79L100.46 192.83L119.69 164.17" id="b2yCUKGIlX"></path><path d="M191.95 88.68L135.5 120.15" id="jg3tlAzQO"></path><path d="M134 117.63C130.68 119.48 133.65 124.59 136.98 122.73C142.62 119.58 187.78 94.37 193.42 91.22C196.75 89.37 193.78 84.27 190.45 86.12C179.16 92.42 139.65 114.48 134 117.63Z" id="dFoOiLn4D"></path><path d="M194.41 104.42L109.09 152" id="czrhPIYCK"></path><path d="M107.59 149.44C104.26 151.29 107.24 156.39 110.57 154.54C119.1 149.78 187.35 111.72 195.89 106.96C199.22 105.11 196.24 100.01 192.91 101.86C192.91 101.86 116.12 144.68 107.59 149.44Z" id="jgXdFAORH"></path><path d="M84.12 189.76C96 201.64 93.84 223.05 79.31 237.59C64.77 252.12 43.36 254.28 31.48 242.4C19.61 230.53 21.76 209.12 36.3 194.58C50.84 180.04 72.25 177.89 84.12 189.76Z" id="cUW9wMHYT"></path><path d="M43.03 248.71C41.83 253 32.2 287.35 31 291.64C33.16 298.16 39.68 294.83 39.68 294.83C41.01 290.23 51.65 253.41 52.98 248.8C52.9 248.86 52.82 248.9 52.74 248.94C49.59 250.06 46.13 249.98 43.03 248.71Z" id="a3Rrfegpd"></path></defs><g><g><g><use xlink:href="#c9fOaII9e" opacity="1" fill="#ffb844" fill-opacity="1"></use><g><use xlink:href="#c9fOaII9e" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-opacity="0"></use></g></g><g><use xlink:href="#b2OH88JXTO" opacity="1" fill="url(#gradienteyO7uO4QM)"></use><g><use xlink:href="#b2OH88JXTO" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-opacity="0"></use></g></g><g><use xlink:href="#af3d4HiHm" opacity="1" fill="url(#gradientc8JtVBsoC)"></use><g><use xlink:href="#af3d4HiHm" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-opacity="0"></use></g></g><g><use xlink:href="#a4q0rsCnrv" opacity="1" fill="#68e1fd" fill-opacity="1"></use><g><use xlink:href="#a4q0rsCnrv" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-opacity="0"></use></g></g><g><use xlink:href="#c7ebEaCpN" opacity="1" fill="#000000" fill-opacity="0"></use><g><use xlink:href="#c7ebEaCpN" opacity="1" fill-opacity="0" stroke="#29abe2" stroke-width="1" stroke-opacity="1"></use></g></g><g><use xlink:href="#b39wr6RPmA" opacity="1" fill="#000000" fill-opacity="0"></use><g><use xlink:href="#b39wr6RPmA" opacity="1" fill-opacity="0" stroke="#29abe2" stroke-width="1" stroke-opacity="1"></use></g></g><g><use xlink:href="#a6nzwoGoLL" opacity="1" fill="#000000" fill-opacity="0"></use><g><use xlink:href="#a6nzwoGoLL" opacity="1" fill-opacity="0" stroke="#29abe2" stroke-width="1" stroke-opacity="1"></use></g></g><g><use xlink:href="#b1vSSA8qYo" opacity="1" fill="#000000" fill-opacity="0"></use><g><use xlink:href="#b1vSSA8qYo" opacity="1" fill-opacity="0" stroke="#29abe2" stroke-width="1" stroke-opacity="1"></use></g></g><g><use xlink:href="#a1cN5C00K7" opacity="1" fill="#000000" fill-opacity="0"></use><g><use xlink:href="#a1cN5C00K7" opacity="1" fill-opacity="0" stroke="#29abe2" stroke-width="1" stroke-opacity="1"></use></g></g><g><use xlink:href="#b8CNeX4aH" opacity="1" fill="#ffa515" fill-opacity="1"></use><g><use xlink:href="#b8CNeX4aH" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-opacity="0"></use></g></g><g><use xlink:href="#h1Lc1BLOcS" opacity="1" fill="#ffa515" fill-opacity="1"></use><g><use xlink:href="#h1Lc1BLOcS" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-opacity="0"></use></g></g><g><use xlink:href="#c1zInXnjc0" opacity="1" fill="#ffa515" fill-opacity="1"></use><g><use xlink:href="#c1zInXnjc0" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-opacity="0"></use></g></g><g><use xlink:href="#agpLgpluI" opacity="1" fill="#fcb632" fill-opacity="1"></use><g><use xlink:href="#agpLgpluI" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-opacity="0"></use></g></g><g><use xlink:href="#o1bzMov6is" opacity="1" fill="#68e1fd" fill-opacity="1"></use><g><use xlink:href="#o1bzMov6is" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-opacity="0"></use></g></g><g><use xlink:href="#b1g9sGabV6" opacity="1" fill="#db5db6" fill-opacity="1"></use><g><use xlink:href="#b1g9sGabV6" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-opacity="0"></use></g></g><g><use xlink:href="#adi0VQLkJ" opacity="1" fill="#d8d5d0" fill-opacity="1"></use><g><use xlink:href="#adi0VQLkJ" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-opacity="0"></use></g></g><g><use xlink:href="#b1HNA1yRUX" opacity="1" fill="#d8d5d0" fill-opacity="1"></use><g><use xlink:href="#b1HNA1yRUX" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-opacity="0"></use></g></g><g><use xlink:href="#bDgFK4HvS" opacity="1" fill="#d8d5d0" fill-opacity="1"></use><g><use xlink:href="#bDgFK4HvS" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-opacity="0"></use></g></g><g><use xlink:href="#cSxJSXEc3" opacity="1" fill="#eaeaea" fill-opacity="1"></use><g><use xlink:href="#cSxJSXEc3" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-opacity="0"></use></g></g><g><use xlink:href="#eWzTFEbLX" opacity="1" fill="#d8d5d0" fill-opacity="1"></use><g><use xlink:href="#eWzTFEbLX" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-opacity="0"></use></g></g><g><use xlink:href="#bKq7pqpg" opacity="1" fill="#d8d5d0" fill-opacity="1"></use><g><use xlink:href="#bKq7pqpg" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-opacity="0"></use></g></g><g><use xlink:href="#f1FXEv2Ttn" opacity="1" fill="#cccccc" fill-opacity="1"></use><g><use xlink:href="#f1FXEv2Ttn" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-opacity="0"></use></g></g><g><use xlink:href="#d6gLadj8m9" opacity="1" fill="#d8d5d0" fill-opacity="1"></use><g><use xlink:href="#d6gLadj8m9" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-opacity="0"></use></g></g><g><use xlink:href="#cIsKVSor" opacity="1" fill="#cccccc" fill-opacity="1"></use><g><use xlink:href="#cIsKVSor" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-opacity="0"></use></g></g><g><use xlink:href="#iRLUxhZ20" opacity="1" fill="#d8d5d0" fill-opacity="1"></use><g><use xlink:href="#iRLUxhZ20" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-opacity="0"></use></g></g><g><use xlink:href="#b2LYB7uq3i" opacity="1" fill="#cccccc" fill-opacity="1"></use><g><use xlink:href="#b2LYB7uq3i" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-opacity="0"></use></g></g><g><use xlink:href="#a7wQHFR8k" opacity="1" fill="#d8d5d0" fill-opacity="1"></use><g><use xlink:href="#a7wQHFR8k" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-opacity="0"></use></g></g><g><use xlink:href="#e1TGwiRRT" opacity="1" fill="#cccccc" fill-opacity="1"></use><g><use xlink:href="#e1TGwiRRT" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-opacity="0"></use></g></g><g><use xlink:href="#f76U9Ud9sn" opacity="1" fill="#68e1fd" fill-opacity="1"></use><g><use xlink:href="#f76U9Ud9sn" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-opacity="0"></use></g></g><g><use xlink:href="#h7r54lwfH" opacity="1" fill="#68e1fd" fill-opacity="1"></use><g><use xlink:href="#h7r54lwfH" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-opacity="0"></use></g></g><g><use xlink:href="#bdExyhW8Z" opacity="1" fill="#68e1fd" fill-opacity="1"></use><g><use xlink:href="#bdExyhW8Z" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-opacity="0"></use></g></g><g><use xlink:href="#bxirT1zkv" opacity="1" fill="#68e1fd" fill-opacity="1"></use><g><use xlink:href="#bxirT1zkv" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-opacity="0"></use></g></g><g><use xlink:href="#ap0tkhHC4" opacity="1" fill="#68e1fd" fill-opacity="1"></use><g><use xlink:href="#ap0tkhHC4" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-opacity="0"></use></g></g><g><use xlink:href="#a8zGWMFcij" opacity="1" fill="#68e1fd" fill-opacity="1"></use><g><use xlink:href="#a8zGWMFcij" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-opacity="0"></use></g></g><g><use xlink:href="#c6spktYbJ" opacity="1" fill="#d8d5d0" fill-opacity="1"></use><g><use xlink:href="#c6spktYbJ" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-opacity="0"></use></g></g><g><use xlink:href="#b1SiLPHu2l" opacity="1" fill="#cccccc" fill-opacity="1"></use><g><use xlink:href="#b1SiLPHu2l" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-opacity="0"></use></g></g><g><use xlink:href="#d1iu2ZEA9l" opacity="1" fill="#d8d5d0" fill-opacity="1"></use><g><use xlink:href="#d1iu2ZEA9l" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-opacity="0"></use></g></g><g><use xlink:href="#i2vXCpq2XU" opacity="1" fill="#cccccc" fill-opacity="1"></use><g><use xlink:href="#i2vXCpq2XU" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-opacity="0"></use></g></g><g><use xlink:href="#b70fP9gyY1" opacity="1" fill="#d8d5d0" fill-opacity="1"></use><g><use xlink:href="#b70fP9gyY1" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-opacity="0"></use></g></g><g><use xlink:href="#eHSw3EoSN" opacity="1" fill="#cccccc" fill-opacity="1"></use><g><use xlink:href="#eHSw3EoSN" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-opacity="0"></use></g></g><g><use xlink:href="#acAF8CwbK" opacity="1" fill="#d8d5d0" fill-opacity="1"></use><g><use xlink:href="#acAF8CwbK" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-opacity="0"></use></g></g><g><use xlink:href="#b9Yb3OAsg" opacity="1" fill="#cccccc" fill-opacity="1"></use><g><use xlink:href="#b9Yb3OAsg" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-opacity="0"></use></g></g><g><use xlink:href="#c2CxT3CrK" opacity="1" fill="#000000" fill-opacity="0"></use><g><use xlink:href="#c2CxT3CrK" opacity="1" fill-opacity="0" stroke="#cccccc" stroke-width="0.5" stroke-opacity="1"></use></g></g><g><use xlink:href="#c3IaFdoWyT" opacity="1" fill="#000000" fill-opacity="0"></use><g><use xlink:href="#c3IaFdoWyT" opacity="1" fill-opacity="0" stroke="#cccccc" stroke-width="0.5" stroke-opacity="1"></use></g></g><g><use xlink:href="#dfVlAfnhe" opacity="1" fill="#000000" fill-opacity="0"></use><g><use xlink:href="#dfVlAfnhe" opacity="1" fill-opacity="0" stroke="#cccccc" stroke-width="0.5" stroke-opacity="1"></use></g></g><g><use xlink:href="#a3cF6vCtB" opacity="1" fill="#ffc65a" fill-opacity="1"></use><g><use xlink:href="#a3cF6vCtB" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-opacity="0"></use></g></g><g><use xlink:href="#gNmh7YRR7" opacity="1" fill="#465ca2" fill-opacity="1"></use><g><use xlink:href="#gNmh7YRR7" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-opacity="0"></use></g></g><g><use xlink:href="#bkdU0sbDX" opacity="1" fill="#465ca2" fill-opacity="1"></use><g><use xlink:href="#bkdU0sbDX" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-opacity="0"></use></g></g><g><use xlink:href="#dop9HgXqw" opacity="1" fill="#283860" fill-opacity="1"></use><g><use xlink:href="#dop9HgXqw" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-opacity="0"></use></g></g><g><use xlink:href="#a6cUi2vYJ" opacity="1" fill="#465ca2" fill-opacity="1"></use><g><use xlink:href="#a6cUi2vYJ" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-opacity="0"></use></g></g><g><use xlink:href="#a2wecFEsx" opacity="1" fill="#9c4100" fill-opacity="1"></use><g><use xlink:href="#a2wecFEsx" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-opacity="0"></use></g></g><g><use xlink:href="#b5ZYqN6t8S" opacity="1" fill="#653200" fill-opacity="1"></use><g><use xlink:href="#b5ZYqN6t8S" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-opacity="0"></use></g></g><g><use xlink:href="#b5KnDg3uS" opacity="1" fill="#9c4100" fill-opacity="1"></use><g><use xlink:href="#b5KnDg3uS" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-opacity="0"></use></g></g><g><use xlink:href="#b2W12O8aZA" opacity="1" fill="#653200" fill-opacity="1"></use><g><use xlink:href="#b2W12O8aZA" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-opacity="0"></use></g></g><g><use xlink:href="#alLt8Y2aB" opacity="1" fill="#653200" fill-opacity="1"></use><g><use xlink:href="#alLt8Y2aB" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-opacity="0"></use></g></g><g><use xlink:href="#a3SB3sStEQ" opacity="1" fill="#1784aa" fill-opacity="1"></use><g><use xlink:href="#a3SB3sStEQ" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-opacity="0"></use></g></g><g><use xlink:href="#i13CXTvFdo" opacity="1" fill="#29abe2" fill-opacity="1"></use><g><use xlink:href="#i13CXTvFdo" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-opacity="0"></use></g></g><g><use xlink:href="#cvyxZ3YlL" opacity="1" fill="#e4f5fd" fill-opacity="1"></use><g><use xlink:href="#cvyxZ3YlL" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-opacity="0"></use></g></g><g><use xlink:href="#a4edmUU2m" opacity="1" fill="#e85454" fill-opacity="1"></use><g><use xlink:href="#a4edmUU2m" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-opacity="0"></use></g></g><g><use xlink:href="#c3GC4vONTe" opacity="1" fill="#653200" fill-opacity="1"></use><g><use xlink:href="#c3GC4vONTe" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-opacity="0"></use></g></g><g><use xlink:href="#f2aKEsuMsP" opacity="1" fill="#88d3d8" fill-opacity="1"></use><g><use xlink:href="#f2aKEsuMsP" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-opacity="0"></use></g></g><g><use xlink:href="#a1iq7sHc3C" opacity="1" fill="#e85454" fill-opacity="1"></use><g><use xlink:href="#a1iq7sHc3C" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-opacity="0"></use></g></g><g><use xlink:href="#fv1D9WLNs" opacity="1" fill="#88d3d8" fill-opacity="1"></use><g><use xlink:href="#fv1D9WLNs" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-opacity="0"></use></g></g><g><use xlink:href="#a2IVUw3rVw" opacity="1" fill="#e85454" fill-opacity="1"></use><g><use xlink:href="#a2IVUw3rVw" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-opacity="0"></use></g></g><g><use xlink:href="#c14CVcnXIO" opacity="1" fill="#653200" fill-opacity="1"></use><g><use xlink:href="#c14CVcnXIO" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-opacity="0"></use></g></g><g><use xlink:href="#a5bUecmrJ" opacity="1" fill="#653200" fill-opacity="1"></use><g><use xlink:href="#a5bUecmrJ" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-opacity="0"></use></g></g><g><use xlink:href="#a79Q1ajp3" opacity="1" fill="#88d3d8" fill-opacity="1"></use><g><use xlink:href="#a79Q1ajp3" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-opacity="0"></use></g></g><g><use xlink:href="#a2FzXdn5D" opacity="1" fill="#1784aa" fill-opacity="1"></use><g><use xlink:href="#a2FzXdn5D" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-opacity="0"></use></g></g><g><use xlink:href="#i1jVOpjSgF" opacity="1" fill="#e4f5fd" fill-opacity="1"></use><g><use xlink:href="#i1jVOpjSgF" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-opacity="0"></use></g></g><g><use xlink:href="#a54jhY3gnw" opacity="1" fill="#7ec971" fill-opacity="1"></use><g><use xlink:href="#a54jhY3gnw" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-opacity="0"></use></g></g><g><use xlink:href="#awnRzNQv7" opacity="1" fill="#61af51" fill-opacity="1"></use><g><use xlink:href="#awnRzNQv7" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-opacity="0"></use></g></g><g><use xlink:href="#c6KBJym64" opacity="1" fill="#000000" fill-opacity="0"></use><g><use xlink:href="#c6KBJym64" opacity="1" fill-opacity="0" stroke="#ffffff" stroke-width="1" stroke-opacity="1"></use></g></g><g><use xlink:href="#g27FaKPWmd" opacity="1" fill="#ffffff" fill-opacity="1"></use><g><use xlink:href="#g27FaKPWmd" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-opacity="0"></use></g></g><g><use xlink:href="#aX8CCj8I" opacity="1" fill="#ffffff" fill-opacity="1"></use><g><use xlink:href="#aX8CCj8I" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-opacity="0"></use></g></g><g><use xlink:href="#ecjYwXRn2" opacity="1" fill="#ffffff" fill-opacity="1"></use><g><use xlink:href="#ecjYwXRn2" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-opacity="0"></use></g></g><g><use xlink:href="#f1n1tFOjCT" opacity="1" fill="#ffffff" fill-opacity="1"></use><g><use xlink:href="#f1n1tFOjCT" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-opacity="0"></use></g></g><g><use xlink:href="#d2AgR3JSNE" opacity="1" fill="#68e1fd" fill-opacity="1"></use><g><use xlink:href="#d2AgR3JSNE" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-opacity="0"></use></g></g><g><use xlink:href="#b2yCUKGIlX" opacity="1" fill="#68e1fd" fill-opacity="1"></use><g><use xlink:href="#b2yCUKGIlX" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-opacity="0"></use></g></g><g><use xlink:href="#jg3tlAzQO" opacity="1" fill="#68e1fd" fill-opacity="1"></use><g><use xlink:href="#jg3tlAzQO" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-opacity="0"></use></g></g><g><use xlink:href="#dFoOiLn4D" opacity="1" fill="#f2f2f2" fill-opacity="1"></use><g><use xlink:href="#dFoOiLn4D" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-opacity="0"></use></g></g><g><use xlink:href="#czrhPIYCK" opacity="1" fill="#68e1fd" fill-opacity="1"></use><g><use xlink:href="#czrhPIYCK" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-opacity="0"></use></g></g><g><use xlink:href="#jgXdFAORH" opacity="1" fill="#f2f2f2" fill-opacity="1"></use><g><use xlink:href="#jgXdFAORH" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-opacity="0"></use></g></g><g><use xlink:href="#cUW9wMHYT" opacity="1" fill="#000000" fill-opacity="0"></use><g><use xlink:href="#cUW9wMHYT" opacity="1" fill-opacity="0" stroke="#0071bc" stroke-width="3" stroke-opacity="1"></use></g></g><g><use xlink:href="#a3Rrfegpd" opacity="1" fill="#2e3192" fill-opacity="1"></use><g><use xlink:href="#a3Rrfegpd" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-opacity="0"></use></g></g></g></g></svg></span>
+        </div>
+                    <div class="elementor-icon-box-content">
+            <h3 class="elementor-icon-box-title">
+                <span>
+                    Business Intelligence					</span>
+            </h3>
+                                <p class="elementor-icon-box-description">
+                    Nel mondo odierno, ogni azienda possiede un enorme mole di dati, che tuttavia non vengono analizzati e resi comprensibili in modo evidente. Sfrutta le nostre soluzioni BI per aumentare la tua confidenza nel decision-making.					</p>
+                        </div>
+    </div>
+            </div>
+            </div>
+                    </div>
+                </div>
+    </div>
+                            </div>
+                </div>
+    </section><section class="elementor-section elementor-top-section elementor-element elementor-element-4b5c94 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="4b5c94" data-element_type="section" id="innovazionedigitale"><div class="elementor-container elementor-column-gap-wider">
+                        <div class="elementor-row">
+                <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-ccaa553" data-id="ccaa553" data-element_type="column">
+        <div class="elementor-column-wrap elementor-element-populated">
+                        <div class="elementor-widget-wrap">
+                    <div class="elementor-element elementor-element-688cfd21 elementor-widget elementor-widget-image animated fadeIn" data-id="688cfd21" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;}" data-widget_type="image.default">
+            <div class="elementor-widget-container">
+                            <div class="elementor-image">
+                                            <img data-rjs="2" decoding="async" width="640" height="580" src="https://www.uebb.it/wp-content/uploads/2020/05/SEO-2.svg" class="attachment-full size-full" alt="" loading="lazy">
+</div>
+                    </div>
+            </div>
+                    </div>
+                </div>
+    </div>
+            <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-52fdab61" data-id="52fdab61" data-element_type="column">
+        <div class="elementor-column-wrap elementor-element-populated">
+                        <div class="elementor-widget-wrap">
+                    <div class="elementor-element elementor-element-7721cd19 elementor-widget elementor-widget-heading animated fadeInUp" data-id="7721cd19" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="heading.default">
+            <div class="elementor-widget-container">
+        <h6 class="elementor-heading-title elementor-size-default">Perché implementare soluzioni AI nella propria impresa?</h6>		</div>
+            </div>
+            <div class="elementor-element elementor-element-653f8391 elementor-widget elementor-widget-heading animated fadeInUp" data-id="653f8391" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="heading.default">
+            <div class="elementor-widget-container">
+        <h3 class="elementor-heading-title elementor-size-default">Aumenta il rendimento del tuo business, abbracciando l'innovazione.</h3>		</div>
+            </div>
+            <div class="elementor-element elementor-element-6e6273e3 elementor-widget elementor-widget-heading animated fadeInUp" data-id="6e6273e3" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="heading.default">
+            <div class="elementor-widget-container">
+        <h6 class="elementor-heading-title elementor-size-default">L'IA può diventare un perfetto alleato delle organizzazioni e delle PMI. Oltre ad ottimizzare i processi e a stimolare la crescita, può, ad esempio, prevedere sulla base di una breve analisi dei dati, quale siano le migliori azioni di marketing per un'azienda, chi siano i clienti più insoddisfatti o chi sia più interessato a un determinato prodotto. È, senza dubbio, uno strumento molto potente che può essere applicato a tutte le aree di un’organizzazione.</h6>		</div>
+            </div>
+            <div class="elementor-element elementor-element-4fcb500d elementor-icon-list--layout-inline elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list animated fadeInUp" data-id="4fcb500d" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="icon-list.default">
+            <div class="elementor-widget-container">
+                <ul class="elementor-icon-list-items elementor-inline-items">
+<li class="elementor-icon-list-item elementor-inline-item">
+                                        <span class="elementor-icon-list-icon">
+                        <i aria-hidden="true" class="fas fa-check"></i>						</span>
+                                    <span class="elementor-icon-list-text">Automatizza i processi aziendali</span>
+                                </li>
+                            <li class="elementor-icon-list-item elementor-inline-item">
+                                        <span class="elementor-icon-list-icon">
+                        <i aria-hidden="true" class="fas fa-check"></i>						</span>
+                                    <span class="elementor-icon-list-text">Assisti i tuoi clienti</span>
+                                </li>
+                            <li class="elementor-icon-list-item elementor-inline-item">
+                                        <span class="elementor-icon-list-icon">
+                        <i aria-hidden="true" class="fas fa-check"></i>						</span>
+                                    <span class="elementor-icon-list-text">Aiuta la tua squadra con strumenti all'avanguardia</span>
+                                </li>
+                    </ul>
+</div>
+            </div>
+            <div class="elementor-element elementor-element-311859ba elementor-align-left elementor-mobile-align-left elementor-widget elementor-widget-button animated fadeInUp" data-id="311859ba" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="button.default">
+            <div class="elementor-widget-container">
+                <div class="elementor-button-wrapper">
+        <a href="#results" class="elementor-button-link elementor-button elementor-size-lg" role="button">
+                    <span class="elementor-button-content-wrapper">
+                    <span class="elementor-button-text">SCOPRI DI PIÙ</span>
+    </span>
+                </a>
+    </div>
+            </div>
+            </div>
+                    </div>
+                </div>
+    </div>
+                            </div>
+                </div>
+    </section><section class="elementor-section elementor-top-section elementor-element elementor-element-5af984b8 elementor-reverse-mobile elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="5af984b8" data-element_type="section" id="promise"><div class="elementor-container elementor-column-gap-wider">
+                        <div class="elementor-row">
+                <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-75a76dc9" data-id="75a76dc9" data-element_type="column">
+        <div class="elementor-column-wrap elementor-element-populated">
+                        <div class="elementor-widget-wrap">
+                    <div class="elementor-element elementor-element-70313388 elementor-widget elementor-widget-heading animated fadeInUp" data-id="70313388" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="heading.default">
+            <div class="elementor-widget-container">
+        <h6 class="elementor-heading-title elementor-size-default">Perché implementare soluzioni BI E CLOUD nella propria impresa?</h6>		</div>
+            </div>
+            <div class="elementor-element elementor-element-2c73721 elementor-widget elementor-widget-heading animated fadeInUp" data-id="2c73721" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="heading.default">
+            <div class="elementor-widget-container">
+        <h3 class="elementor-heading-title elementor-size-default">Rivoluziona il tuo rapporto con i dati e la gestione degli stessi.</h3>		</div>
+            </div>
+            <div class="elementor-element elementor-element-4eccea60 elementor-widget elementor-widget-heading animated fadeInUp" data-id="4eccea60" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="heading.default">
+            <div class="elementor-widget-container">
+        <h6 class="elementor-heading-title elementor-size-default">La Business Intelligence consente alle aziende di prendere decisioni migliori, mostrando dati attuali e storici all'interno del contesto aziendale. Gli analisti possono sfruttare la BI per fornire benchmark su prestazioni e concorrenti, per consentire all'organizzazione di funzionare in modo più fluido e più efficiente. Inoltre, gli analisti possono individuare facilmente i trend di mercato, per aumentare le vendite o gli introiti. <br>
+Il Cloud invece, grazie alla sua flessibilità, consente una maggiore collaborazione all'interno di un'azienda con un inevitabile aumento della produttività. Anche sedi distanti migliaia di chilometri possono interagire, condividendo dati e informazioni, in totale sicurezza.</h6>		</div>
+            </div>
+            <div class="elementor-element elementor-element-638bd92f elementor-icon-list--layout-inline elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list animated fadeInUp" data-id="638bd92f" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="icon-list.default">
+            <div class="elementor-widget-container">
+                <ul class="elementor-icon-list-items elementor-inline-items">
+<li class="elementor-icon-list-item elementor-inline-item">
+                                        <span class="elementor-icon-list-icon">
+                        <i aria-hidden="true" class="fas fa-check"></i>						</span>
+                                    <span class="elementor-icon-list-text">Analizza il comportamento dei clienti</span>
+                                </li>
+                            <li class="elementor-icon-list-item elementor-inline-item">
+                                        <span class="elementor-icon-list-icon">
+                        <i aria-hidden="true" class="fas fa-check"></i>						</span>
+                                    <span class="elementor-icon-list-text">Monitora le prestazioni</span>
+                                </li>
+                            <li class="elementor-icon-list-item elementor-inline-item">
+                                        <span class="elementor-icon-list-icon">
+                        <i aria-hidden="true" class="fas fa-check"></i>						</span>
+                                    <span class="elementor-icon-list-text">Individua i trend di mercato</span>
+                                </li>
+                            <li class="elementor-icon-list-item elementor-inline-item">
+                                        <span class="elementor-icon-list-icon">
+                        <i aria-hidden="true" class="fas fa-check"></i>						</span>
+                                    <span class="elementor-icon-list-text">Migliora le operazioni interne</span>
+                                </li>
+                            <li class="elementor-icon-list-item elementor-inline-item">
+                                        <span class="elementor-icon-list-icon">
+                        <i aria-hidden="true" class="fas fa-check"></i>						</span>
+                                    <span class="elementor-icon-list-text">Aumenta flessibilità, prestazioni e risparmio con il Cloud</span>
+                                </li>
+                    </ul>
+</div>
+            </div>
+            <div class="elementor-element elementor-element-431ecf48 elementor-align-left elementor-mobile-align-left elementor-widget elementor-widget-button animated fadeInUp" data-id="431ecf48" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="button.default">
+            <div class="elementor-widget-container">
+                <div class="elementor-button-wrapper">
+        <a href="#results" class="elementor-button-link elementor-button elementor-size-lg" role="button">
+                    <span class="elementor-button-content-wrapper">
+                    <span class="elementor-button-text">SCOPRI DI PIÙ</span>
+    </span>
+                </a>
+    </div>
+            </div>
+            </div>
+                    </div>
+                </div>
+    </div>
+            <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-740f97c" data-id="740f97c" data-element_type="column">
+        <div class="elementor-column-wrap elementor-element-populated">
+                        <div class="elementor-widget-wrap">
+                    <div class="elementor-element elementor-element-2ea99448 elementor-widget elementor-widget-image animated fadeIn" data-id="2ea99448" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;}" data-widget_type="image.default">
+            <div class="elementor-widget-container">
+                            <div class="elementor-image">
+                                            <img data-rjs="2" decoding="async" width="640" height="560" src="https://www.uebb.it/wp-content/uploads/2020/05/SEO-1.svg" class="attachment-full size-full" alt="" loading="lazy">
+</div>
+                    </div>
+            </div>
+                    </div>
+                </div>
+    </div>
+                            </div>
+                </div>
+    </section><section class="elementor-section elementor-top-section elementor-element elementor-element-d21e69e elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="d21e69e" data-element_type="section"><div class="elementor-container elementor-column-gap-wider">
+                        <div class="elementor-row">
+                <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-64a64a2" data-id="64a64a2" data-element_type="column">
+        <div class="elementor-column-wrap elementor-element-populated">
+                        <div class="elementor-widget-wrap">
+                    <div class="elementor-element elementor-element-9bc937f elementor-widget elementor-widget-image animated fadeIn" data-id="9bc937f" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;}" data-widget_type="image.default">
+            <div class="elementor-widget-container">
+                            <div class="elementor-image">
+                                            <img data-rjs="2" decoding="async" width="333" height="251" src="https://www.uebb.it/wp-content/uploads/2020/08/authentication_isometric-2.svg" class="attachment-full size-full" alt="" loading="lazy">
+</div>
+                    </div>
+            </div>
+                    </div>
+                </div>
+    </div>
+            <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-203dc5b" data-id="203dc5b" data-element_type="column">
+        <div class="elementor-column-wrap elementor-element-populated">
+                        <div class="elementor-widget-wrap">
+                    <div class="elementor-element elementor-element-7f37654 elementor-widget elementor-widget-heading animated fadeInUp" data-id="7f37654" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="heading.default">
+            <div class="elementor-widget-container">
+        <h6 class="elementor-heading-title elementor-size-default">Perché scegliere noi?</h6>		</div>
+            </div>
+            <div class="elementor-element elementor-element-76d9898 elementor-widget elementor-widget-heading animated fadeInUp" data-id="76d9898" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="heading.default">
+            <div class="elementor-widget-container">
+        <h3 class="elementor-heading-title elementor-size-default">Servizi su misura, realizzati da un team di esperti nel settore.</h3>		</div>
+            </div>
+            <div class="elementor-element elementor-element-4e1f128 elementor-widget elementor-widget-heading animated fadeInUp" data-id="4e1f128" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="heading.default">
+            <div class="elementor-widget-container">
+        <h6 class="elementor-heading-title elementor-size-default">Il nostro team è composto da personale altamente qualificato, che ha fatto dell'IA e dell'innovazione digitale la propria passione.<br> Rimaniamo sempre aggiornati sulle ultime frontiere tecnologiche, aggiornandoci quotidianamente su metodi innovativi che consentono di migliorare costantemente i nostri prodotti e servizi.  <br>Realizziamo soluzioni su misura, per fornire ad ogni cliente  un servizio che si sposi perfettamente con la propria realtà.</h6>		</div>
+            </div>
+            <div class="elementor-element elementor-element-20563a5 elementor-icon-list--layout-inline elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list animated fadeInUp" data-id="20563a5" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="icon-list.default">
+            <div class="elementor-widget-container">
+                <ul class="elementor-icon-list-items elementor-inline-items">
+<li class="elementor-icon-list-item elementor-inline-item">
+                                        <span class="elementor-icon-list-icon">
+                        <i aria-hidden="true" class="fas fa-check"></i>						</span>
+                                    <span class="elementor-icon-list-text">Servizi al 100% su misura</span>
+                                </li>
+                            <li class="elementor-icon-list-item elementor-inline-item">
+                                        <span class="elementor-icon-list-icon">
+                        <i aria-hidden="true" class="fas fa-check"></i>						</span>
+                                    <span class="elementor-icon-list-text">Un team di esperti a tua disposizione</span>
+                                </li>
+                    </ul>
+</div>
+            </div>
+            <div class="elementor-element elementor-element-994e868 elementor-align-left elementor-mobile-align-left elementor-widget elementor-widget-button animated fadeInUp" data-id="994e868" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="button.default">
+            <div class="elementor-widget-container">
+                <div class="elementor-button-wrapper">
+        <a href="#results" class="elementor-button-link elementor-button elementor-size-lg" role="button">
+                    <span class="elementor-button-content-wrapper">
+                    <span class="elementor-button-text">SCOPRI DI PIÙ</span>
+    </span>
+                </a>
+    </div>
+            </div>
+            </div>
+                    </div>
+                </div>
+    </div>
+                            </div>
+                </div>
+    </section><section class="elementor-section elementor-top-section elementor-element elementor-element-1940260d elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="1940260d" data-element_type="section" id="results" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;shape_divider_top&quot;:&quot;waves&quot;,&quot;shape_divider_top_negative&quot;:&quot;yes&quot;}"><div class="elementor-shape elementor-shape-top" data-negative="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none"><path class="elementor-shape-fill" d="M790.5,93.1c-59.3-5.3-116.8-18-192.6-50c-29.6-12.7-76.9-31-100.5-35.9c-23.6-4.9-52.6-7.8-75.5-5.3
+c-10.2,1.1-22.6,1.4-50.1,7.4c-27.2,6.3-58.2,16.6-79.4,24.7c-41.3,15.9-94.9,21.9-134,22.6C72,58.2,0,25.8,0,25.8V100h1000V65.3
+c0,0-51.5,19.4-106.2,25.7C839.5,97,814.1,95.2,790.5,93.1z"></path></svg>
+</div>
+                <div class="elementor-container elementor-column-gap-default">
+                        <div class="elementor-row">
+                <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-69d96796" data-id="69d96796" data-element_type="column">
+        <div class="elementor-column-wrap elementor-element-populated">
+                        <div class="elementor-widget-wrap">
+                    <div class="elementor-element elementor-element-4e40cf5e elementor-widget elementor-widget-heading animated fadeInDown" data-id="4e40cf5e" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInDown&quot;}" data-widget_type="heading.default">
+            <div class="elementor-widget-container">
+        <h6 class="elementor-heading-title elementor-size-default">I NOSTRI SERVIZI</h6>		</div>
+            </div>
+            <div class="elementor-element elementor-element-47b8f86e elementor-widget elementor-widget-heading animated fadeInDown" data-id="47b8f86e" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInDown&quot;}" data-widget_type="heading.default">
+            <div class="elementor-widget-container">
+        <h2 class="elementor-heading-title elementor-size-default">Soluzioni all'avanguardia per il tuo Business.</h2>		</div>
+            </div>
+            <div class="elementor-element elementor-element-7a736954 elementor-widget elementor-widget-heading animated fadeInDown" data-id="7a736954" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInDown&quot;}" data-widget_type="heading.default">
+            <div class="elementor-widget-container">
+        <h5 class="elementor-heading-title elementor-size-default">Porta il tuo business nel nuovo millennio con i nostri servizi.</h5>		</div>
+            </div>
+                    </div>
+                </div>
+    </div>
+                            </div>
+                </div>
+    </section><section class="elementor-section elementor-top-section elementor-element elementor-element-52afbc58 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="52afbc58" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}"><div class="elementor-container elementor-column-gap-default">
+                        <div class="elementor-row">
+                <div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-49bfd424" data-id="49bfd424" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+        <div class="elementor-column-wrap elementor-element-populated">
+                        <div class="elementor-widget-wrap">
+                    <div class="elementor-element elementor-element-2483cb04 elementor-view-default elementor-position-top elementor-widget elementor-widget-themo-service-block animated fadeIn" data-id="2483cb04" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:200}" data-widget_type="themo-service-block.default">
+            <div class="elementor-widget-container">
+                <div class="th-service-block-w">
+        <div class="elementor-icon-box-wrapper th-show-icon">
+                                <div class="elementor-icon-box-icon th-icon-size-md">
+                    <span class="elementor-icon ">
+                        <i aria-hidden="true" class="fas fa-eye"></i>                        </span>
+                </div>
+                            <div class="elementor-icon-box-content">
+                <h4 class="elementor-icon-box-title">
+                    <span>Computer Vision </span>
+                </h4>
+                <p class="elementor-icon-box-description">Quante persone sono presenti all'interno del mio stabilimento? Produco pezzi di alta qualità o composti chimici titolati bene?
+Tutte queste domande possono avere una risposta automatizzata tramite i nostri algoritmi AI estremamente precisi e cost-friendly.</p>
+            </div>
+        </div>
+
+    </div>
+
+            </div>
+            </div>
+                    </div>
+                </div>
+    </div>
+            <div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-3b3cb275" data-id="3b3cb275" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+        <div class="elementor-column-wrap elementor-element-populated">
+                        <div class="elementor-widget-wrap">
+                    <div class="elementor-element elementor-element-254dc9ae elementor-view-default elementor-position-top elementor-widget elementor-widget-themo-service-block animated fadeIn" data-id="254dc9ae" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:200}" data-widget_type="themo-service-block.default">
+            <div class="elementor-widget-container">
+                <div class="th-service-block-w">
+        <div class="elementor-icon-box-wrapper th-show-icon">
+                                <div class="elementor-icon-box-icon th-icon-size-md">
+                    <span class="elementor-icon ">
+                        <i aria-hidden="true" class="fasth-linea icon-ecommerce-graph3"></i>                        </span>
+                </div>
+                            <div class="elementor-icon-box-content">
+                <h4 class="elementor-icon-box-title">
+                    <span>Marketing 4.0</span>
+                </h4>
+                <p class="elementor-icon-box-description">Comprendere la fidelizzazione dei clienti è estremamente importante per il tuo business.
+Analizza i dati in tuo possesso con i nostri algoritmi AI per prevedere la domanda dei tuoi clienti, concentrando le tue risorse per il cliente giusto al momento giusto. </p>
+            </div>
+        </div>
+
+    </div>
+
+            </div>
+            </div>
+                    </div>
+                </div>
+    </div>
+            <div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-52afb554" data-id="52afb554" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+        <div class="elementor-column-wrap elementor-element-populated">
+                        <div class="elementor-widget-wrap">
+                    <div class="elementor-element elementor-element-2330810b elementor-view-default elementor-position-top elementor-widget elementor-widget-themo-service-block animated fadeIn" data-id="2330810b" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:200}" data-widget_type="themo-service-block.default">
+            <div class="elementor-widget-container">
+                <div class="th-service-block-w">
+        <div class="elementor-icon-box-wrapper th-show-icon">
+                                <div class="elementor-icon-box-icon th-icon-size-md">
+                    <span class="elementor-icon ">
+                        <i aria-hidden="true" class="fasth-linea icon-basic-book-pen"></i>                        </span>
+                </div>
+                            <div class="elementor-icon-box-content">
+                <h4 class="elementor-icon-box-title">
+                    <span>Text-To-Knowledge e NLP</span>
+                </h4>
+                <p class="elementor-icon-box-description">Realizziamo soluzioni AI che possono aiutarti ad estrapolare informazioni da una grossa mole di dati, che siano essi visivi, audio o testuali. 
+Concentrati solo sulle informazioni di cui hai bisogno.
+In più, utilizza ChatBot intelligenti per rispondere alle domande dei tuoi clienti.</p>
+            </div>
+        </div>
+
+    </div>
+
+            </div>
+            </div>
+                    </div>
+                </div>
+    </div>
+                            </div>
+                </div>
+    </section><section class="elementor-section elementor-top-section elementor-element elementor-element-6c3ae6d5 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="6c3ae6d5" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;shape_divider_bottom&quot;:&quot;waves&quot;}"><div class="elementor-shape elementor-shape-bottom" data-negative="false">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none"><path class="elementor-shape-fill" d="M421.9,6.5c22.6-2.5,51.5,0.4,75.5,5.3c23.6,4.9,70.9,23.5,100.5,35.7c75.8,32.2,133.7,44.5,192.6,49.7
+c23.6,2.1,48.7,3.5,103.4-2.5c54.7-6,106.2-25.6,106.2-25.6V0H0v30.3c0,0,72,32.6,158.4,30.5c39.2-0.7,92.8-6.7,134-22.4
+c21.2-8.1,52.2-18.2,79.7-24.2C399.3,7.9,411.6,7.5,421.9,6.5z"></path></svg>
+</div>
+                <div class="elementor-container elementor-column-gap-default">
+                        <div class="elementor-row">
+                <div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-1c6f96c7" data-id="1c6f96c7" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+        <div class="elementor-column-wrap elementor-element-populated">
+                        <div class="elementor-widget-wrap">
+                    <div class="elementor-element elementor-element-5f7a61ac elementor-view-default elementor-position-top elementor-widget elementor-widget-themo-service-block animated fadeIn" data-id="5f7a61ac" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:200}" data-widget_type="themo-service-block.default">
+            <div class="elementor-widget-container">
+                <div class="th-service-block-w">
+        <div class="elementor-icon-box-wrapper th-show-icon">
+                                <div class="elementor-icon-box-icon th-icon-size-md">
+                    <span class="elementor-icon ">
+                        <i aria-hidden="true" class="fasth-trip travelpack-world-wide-web"></i>                        </span>
+                </div>
+                            <div class="elementor-icon-box-content">
+                <h4 class="elementor-icon-box-title">
+                    <span>Soluzioni Cloud</span>
+                </h4>
+                <p class="elementor-icon-box-description">Abbraccia l'innovazione passando a soluzioni Cloud per il tuo business.
+Ciò ti permette di avere sistemi di sicurezza all'avanguardia, abbattere i costi ed aumentare significativamente la produttività.
+Oltretutto, le soluzioni Cloud sono totalmente scalabili e facilmente gestibili, fattori che aumenteranno la solidità della tua infrastruttura IT.</p>
+            </div>
+        </div>
+
+    </div>
+
+            </div>
+            </div>
+                    </div>
+                </div>
+    </div>
+            <div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-6e1820f2" data-id="6e1820f2" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+        <div class="elementor-column-wrap elementor-element-populated">
+                        <div class="elementor-widget-wrap">
+                    <div class="elementor-element elementor-element-48f70780 elementor-view-default elementor-position-top elementor-widget elementor-widget-themo-service-block animated fadeIn" data-id="48f70780" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:200}" data-widget_type="themo-service-block.default">
+            <div class="elementor-widget-container">
+                <div class="th-service-block-w">
+        <div class="elementor-icon-box-wrapper th-show-icon">
+                                <div class="elementor-icon-box-icon th-icon-size-md">
+                    <span class="elementor-icon ">
+                        <i aria-hidden="true" class="fasth-linea icon-basic-link"></i>                        </span>
+                </div>
+                            <div class="elementor-icon-box-content">
+                <h4 class="elementor-icon-box-title">
+                    <span>Integrazione dei Processi Aziendali e Sviluppo Software</span>
+                </h4>
+                <p class="elementor-icon-box-description">Ottimizza i tuoi processi aziendali con soluzioni integrate, che possono farti risparmiare tempo e risorse. 
+Collega sistemi tra loro indipendenti al fine di ridurre i tempi di stallo e velocizzare i processi industriali.
+In più, realizziamo software tailor-made per le tue esigenze.</p>
+            </div>
+        </div>
+
+    </div>
+
+            </div>
+            </div>
+                    </div>
+                </div>
+    </div>
+            <div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-4ddcd58f" data-id="4ddcd58f" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+        <div class="elementor-column-wrap elementor-element-populated">
+                        <div class="elementor-widget-wrap">
+                    <div class="elementor-element elementor-element-207c3606 elementor-view-default elementor-position-top elementor-widget elementor-widget-themo-service-block animated fadeIn" data-id="207c3606" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:200}" data-widget_type="themo-service-block.default">
+            <div class="elementor-widget-container">
+                <div class="th-service-block-w">
+        <div class="elementor-icon-box-wrapper th-show-icon">
+                                <div class="elementor-icon-box-icon th-icon-size-md">
+                    <span class="elementor-icon ">
+                        <i aria-hidden="true" class="th-linea icon th-linea icon-ecommerce-graph-increase"></i>                        </span>
+                </div>
+                            <div class="elementor-icon-box-content">
+                <h4 class="elementor-icon-box-title">
+                    <span>Soluzioni BI (Business Intelligence)</span>
+                </h4>
+                <p class="elementor-icon-box-description">Combiniamo soluzioni di business analytics, data mining, visualizzazione dei dati, strumenti e infrastrutture.
+Ciò ti permette di avere una vista completa dei dati della tua organizzazione al fine di stimolare il cambiamento, eliminare le inefficienze e attuare un rapido adattamento ai cambiamenti di mercato e forniture.</p>
+            </div>
+        </div>
+
+    </div>
+
+            </div>
+            </div>
+                    </div>
+                </div>
+    </div>
+                            </div>
+                </div>
+    </section><section class="elementor-section elementor-inner-section elementor-element elementor-element-30fa9b93 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="30fa9b93" data-element_type="section"><div class="elementor-container elementor-column-gap-wider">
+                        <div class="elementor-row">
+                <div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-20da80f0" data-id="20da80f0" data-element_type="column">
+        <div class="elementor-column-wrap elementor-element-populated">
+                        <div class="elementor-widget-wrap">
+                    <div class="elementor-element elementor-element-51948fc0 elementor-widget elementor-widget-counter" data-id="51948fc0" data-element_type="widget" data-widget_type="counter.default">
+            <div class="elementor-widget-container">
+                <div class="elementor-counter">
+        <div class="elementor-counter-number-wrapper">
+            <span class="elementor-counter-number-prefix"></span>
+            <span class="elementor-counter-number" data-duration="2000" data-to-value="1" data-from-value="0" data-delimiter=",">1</span>
+            <span class="elementor-counter-number-suffix"></span>
+        </div>
+                        <div class="elementor-counter-title">Anni di Servizio</div>
+                </div>
+            </div>
+            </div>
+                    </div>
+                </div>
+    </div>
+            <div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-41c5c348" data-id="41c5c348" data-element_type="column">
+        <div class="elementor-column-wrap elementor-element-populated">
+                        <div class="elementor-widget-wrap">
+                    <div class="elementor-element elementor-element-6c864369 elementor-widget elementor-widget-counter" data-id="6c864369" data-element_type="widget" data-widget_type="counter.default">
+            <div class="elementor-widget-container">
+                <div class="elementor-counter">
+        <div class="elementor-counter-number-wrapper">
+            <span class="elementor-counter-number-prefix"></span>
+            <span class="elementor-counter-number" data-duration="2000" data-to-value="15" data-from-value="0" data-delimiter=",">15</span>
+            <span class="elementor-counter-number-suffix"></span>
+        </div>
+                        <div class="elementor-counter-title">Clienti Felici</div>
+                </div>
+            </div>
+            </div>
+                    </div>
+                </div>
+    </div>
+            <div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-3b532dca" data-id="3b532dca" data-element_type="column">
+        <div class="elementor-column-wrap elementor-element-populated">
+                        <div class="elementor-widget-wrap">
+                    <div class="elementor-element elementor-element-23a1b811 elementor-widget elementor-widget-counter" data-id="23a1b811" data-element_type="widget" data-widget_type="counter.default">
+            <div class="elementor-widget-container">
+                <div class="elementor-counter">
+        <div class="elementor-counter-number-wrapper">
+            <span class="elementor-counter-number-prefix"></span>
+            <span class="elementor-counter-number" data-duration="2000" data-to-value="20" data-from-value="0" data-delimiter=",">20</span>
+            <span class="elementor-counter-number-suffix"></span>
+        </div>
+                        <div class="elementor-counter-title">Progetti Completati</div>
+                </div>
+            </div>
+            </div>
+                    </div>
+                </div>
+    </div>
+            <div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-66c0875a" data-id="66c0875a" data-element_type="column">
+        <div class="elementor-column-wrap elementor-element-populated">
+                        <div class="elementor-widget-wrap">
+                    <div class="elementor-element elementor-element-25519c77 elementor-widget elementor-widget-counter" data-id="25519c77" data-element_type="widget" data-widget_type="counter.default">
+            <div class="elementor-widget-container">
+                <div class="elementor-counter">
+        <div class="elementor-counter-number-wrapper">
+            <span class="elementor-counter-number-prefix"></span>
+            <span class="elementor-counter-number" data-duration="2000" data-to-value="9" data-from-value="0" data-delimiter=",">9</span>
+            <span class="elementor-counter-number-suffix"></span>
+        </div>
+                        <div class="elementor-counter-title">Tazze di Caffè al giorno</div>
+                </div>
+            </div>
+            </div>
+                    </div>
+                </div>
+    </div>
+                            </div>
+                </div>
+    </section><section class="elementor-section elementor-top-section elementor-element elementor-element-17f1a6d1 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="17f1a6d1" data-element_type="section" id="contatti" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;shape_divider_top&quot;:&quot;curve-asymmetrical&quot;,&quot;shape_divider_top_negative&quot;:&quot;yes&quot;,&quot;shape_divider_bottom&quot;:&quot;curve-asymmetrical&quot;,&quot;shape_divider_bottom_negative&quot;:&quot;yes&quot;}"><div class="elementor-shape elementor-shape-top" data-negative="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none"><path class="elementor-shape-fill" d="M615.2,96.7C240.2,97.8,0,18.9,0,0v100h1000V0C1000,19.2,989.8,96,615.2,96.7z"></path></svg>
+</div>
+            <div class="elementor-shape elementor-shape-bottom" data-negative="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none"><path class="elementor-shape-fill" d="M615.2,96.7C240.2,97.8,0,18.9,0,0v100h1000V0C1000,19.2,989.8,96,615.2,96.7z"></path></svg>
+</div>
+                <div class="elementor-container elementor-column-gap-default">
+                        <div class="elementor-row">
+                <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-55d53bd9" data-id="55d53bd9" data-element_type="column">
+        <div class="elementor-column-wrap elementor-element-populated">
+                        <div class="elementor-widget-wrap">
+                    <div class="elementor-element elementor-element-53fb30c0 elementor-widget elementor-widget-spacer" data-id="53fb30c0" data-element_type="widget" id="contacts" data-widget_type="spacer.default">
+            <div class="elementor-widget-container">
+                <div class="elementor-spacer">
+        <div class="elementor-spacer-inner"></div>
+    </div>
+            </div>
+            </div>
+            <div class="elementor-element elementor-element-6e0180d6 elementor-widget elementor-widget-heading animated fadeInDown" data-id="6e0180d6" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInDown&quot;}" data-widget_type="heading.default">
+            <div class="elementor-widget-container">
+        <h6 class="elementor-heading-title elementor-size-default">ENTRA NEL NUOVO MILLENNNIO</h6>		</div>
+            </div>
+            <div class="elementor-element elementor-element-bf4204c elementor-view-default elementor-position-top elementor-widget elementor-widget-themo-header animated fadeIn" data-id="bf4204c" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;}" data-widget_type="themo-header.default">
+            <div class="elementor-widget-container">
+                <div class="th-header-wrap">
+    <div class="elementor-icon-box-wrapper ">
+                        <div class="elementor-icon-box-content">
+                <h5 class="elementor-icon-box-title">
+                    "Con la spinta del Cloud all'accesso ai dati, potenza di calcolo e velocità, le aziende possono scalare l'AI più in fretta, migliorare i risultati e accelerare il ritorno alla crescita sostenibile."                    </h5>
+                                    <p class="elementor-icon-box-description"></p>
+
+                                </div>
+        </div>
+
+    </div>
+
+            </div>
+            </div>
+            <div class="elementor-element elementor-element-2aeb54a5 elementor-widget elementor-widget-spacer" data-id="2aeb54a5" data-element_type="widget" data-widget_type="spacer.default">
+            <div class="elementor-widget-container">
+                <div class="elementor-spacer">
+        <div class="elementor-spacer-inner"></div>
+    </div>
+            </div>
+            </div>
+                    </div>
+                </div>
+    </div>
+                            </div>
+                </div>
+    </section><section class="elementor-section elementor-top-section elementor-element elementor-element-3ac31d59 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="3ac31d59" data-element_type="section"><div class="elementor-container elementor-column-gap-default">
+                        <div class="elementor-row">
+                <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-4b2d939c animated fadeIn" data-id="4b2d939c" data-element_type="column" data-settings="{&quot;animation&quot;:&quot;fadeIn&quot;,&quot;animation_delay&quot;:400}">
+        <div class="elementor-column-wrap elementor-element-populated">
+                        <div class="elementor-widget-wrap e-swiper-container">
+                    <div class="elementor-element elementor-element-21dc2a2 elementor-widget elementor-widget-image-carousel e-widget-swiper" data-id="21dc2a2" data-element_type="widget" data-settings="{&quot;autoplay&quot;:&quot;no&quot;,&quot;navigation&quot;:&quot;none&quot;,&quot;slides_to_show_tablet&quot;:&quot;4&quot;,&quot;slides_to_show_mobile&quot;:&quot;2&quot;,&quot;infinite&quot;:&quot;no&quot;,&quot;image_spacing_custom&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:40,&quot;sizes&quot;:[]},&quot;speed&quot;:500}" data-widget_type="image-carousel.default">
+            <div class="elementor-widget-container">
+                <div class="elementor-image-carousel-wrapper swiper-container swiper-container-initialized swiper-container-horizontal" dir="ltr">
+        <div class="elementor-image-carousel swiper-wrapper" style="transform: translate3d(-195px, 0px, 0px); transition-duration: 0ms;">
+                            <div class="swiper-slide swiper-slide-prev" style="width: 155px; margin-right: 40px;"><figure class="swiper-slide-inner"><img data-rjs="2" decoding="async" class="swiper-slide-image" src="https://i0.wp.com/www.uebb.it/wp-content/uploads/2022/10/logo2-1.png?fit=94%2C56&amp;ssl=1" alt="logo2"></figure></div>
+<div class="swiper-slide swiper-slide-active" style="width: 155px; margin-right: 40px;"><figure class="swiper-slide-inner"><img data-rjs="2" decoding="async" class="swiper-slide-image" src="https://i0.wp.com/www.uebb.it/wp-content/uploads/2022/10/logo3-1.png?fit=227%2C56&amp;ssl=1" alt="logo3"></figure></div>
+<div class="swiper-slide swiper-slide-next" style="width: 155px; margin-right: 40px;"><figure class="swiper-slide-inner"><img data-rjs="2" decoding="async" class="swiper-slide-image" src="https://i0.wp.com/www.uebb.it/wp-content/uploads/2022/10/logo4-1.png?fit=235%2C56&amp;ssl=1" alt="logo4"></figure></div>			</div>
+                                                            <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+            </div>
+            </div>
+                    </div>
+                </div>
+    </div>
+                            </div>
+                </div>
+    </section><section class="elementor-section elementor-top-section elementor-element elementor-element-39e4ea1b elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="39e4ea1b" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;gradient&quot;,&quot;shape_divider_top&quot;:&quot;waves&quot;,&quot;shape_divider_top_negative&quot;:&quot;yes&quot;}"><div class="elementor-background-overlay"></div>
+                    <div class="elementor-shape elementor-shape-top" data-negative="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none"><path class="elementor-shape-fill" d="M790.5,93.1c-59.3-5.3-116.8-18-192.6-50c-29.6-12.7-76.9-31-100.5-35.9c-23.6-4.9-52.6-7.8-75.5-5.3
+c-10.2,1.1-22.6,1.4-50.1,7.4c-27.2,6.3-58.2,16.6-79.4,24.7c-41.3,15.9-94.9,21.9-134,22.6C72,58.2,0,25.8,0,25.8V100h1000V65.3
+c0,0-51.5,19.4-106.2,25.7C839.5,97,814.1,95.2,790.5,93.1z"></path></svg>
+</div>
+                <div class="elementor-container elementor-column-gap-default">
+                        <div class="elementor-row">
+                <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-190a692b" data-id="190a692b" data-element_type="column">
+        <div class="elementor-column-wrap elementor-element-populated">
+                        <div class="elementor-widget-wrap">
+                    <div class="elementor-element elementor-element-465a44a0 elementor-widget elementor-widget-heading animated fadeIn" data-id="465a44a0" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;}" data-widget_type="heading.default">
+            <div class="elementor-widget-container">
+        <h2 class="elementor-heading-title elementor-size-default">Contattaci!</h2>		</div>
+            </div>
+                    </div>
+                </div>
+    </div>
+            <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-17eed460" data-id="17eed460" data-element_type="column">
+        <div class="elementor-column-wrap elementor-element-populated">
+                        <div class="elementor-widget-wrap">
+                    <div class="elementor-element elementor-element-26fe042e elementor-align-right elementor-mobile-align-left elementor-widget elementor-widget-button animated fadeIn" data-id="26fe042e" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;}" data-widget_type="button.default">
+            <div class="elementor-widget-container">
+                <div class="elementor-button-wrapper">
+     
+    </div>
+            </div>
+            </div>
+                    </div>
+                </div>
+    </div>
+                            </div>
+                </div>
+    </section>
+</div>
+        </div>
+                </div>
+        </section><!-- Comment form for pages --><div class="container">        <div class="row">
+        <div class="col-md-12">
+        
+
+        </div>
+    </div>
+</div>
+<!-- /.container -->    <!-- End Comment form for pages -->
+
+    
+                
+
+</div>
+<!-- /.inner-container -->
+</div>
+<!-- /.content -->
+</div><iframe name="__uspapiLocator" style="display: none;"></iframe>
+<!-- /.wrap -->
+
+
+<div class="prefooter"></div>
+
+<footer class="footer" role="contentinfo"><div class="container">
+                        <div class="footer-widgets row th-widget-area">
+                                  <div class="footer-area-1 col-sm-6">
+                
+            <section class="widget widget-social"><div class="widget-inner">
+                                <div class="soc-widget">
+                <a target="_blank" href="https://instagram.com/uebbinnovation?igshid=YmMyMTA2M2Y="><i class="fa fa-instagram"></i></a><a target="_blank" href="https://www.linkedin.com/company/uebb-digital-innovation/"><i class="fa fa-linkedin"></i></a>           			</div>
+            </div>
+    </section>
+</div>
+                                                <div class="footer-area-2 col-sm-6">
+                <section class="widget_text widget custom_html-5 widget_custom_html"><div class="widget_text widget-inner"><div class="textwidget custom-html-widget">
+<a href="https://www.iubenda.com/privacy-policy/52528831" class="iubenda-white no-brand iubenda-noiframe iubenda-embed iubenda-noiframe " title="Privacy Policy" style="outline: 0px; border: 0px; text-decoration: none; display: inline-block; background: none; width: 116px; height: 25px;">Privacy Policy</a><script type="text/javascript" src="https://cdn.iubenda.com/iubenda_i_badge.js"></script><script type="text/javascript">(function (w,d) {var loader = function () {var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src="https://cdn.iubenda.com/iubenda.js"; tag.parentNode.insertBefore(s,tag);}; if(w.addEventListener){w.addEventListener("load", loader, false);}else if(w.attachEvent){w.attachEvent("onload", loader);}else{w.onload = loader;}})(window, document);</script>
+</div></div></section>
+</div>
+                                                 <div class="footer-area-3 col-sm-6">
+                                    </div>
+                                             </div>
+            </div>
+<div class="footer-btm-bar">        
+    <div class="container">    
+        <div class="footer-copyright row">
+            <div class="col-xs-12">
+                <p><span class="footer_copy">© UEBB Artificial Intelligence, 2022. P.IVA: 03890950128 </span>  </p>
+            </div>
+        </div>
+    </div>
+</div>
+</footer><link rel="stylesheet" id="e-animations-css" href="https://www.uebb.it/wp-content/plugins/elementor/assets/lib/animations/animations.min.css?ver=3.8.1" type="text/css" media="all">
+
+
+
+</html>
